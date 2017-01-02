@@ -1,5 +1,6 @@
 THISDIR := gabookII
 THISBOOK := $(THISDIR)
+BASEVER := d77ceaa
 
 include ../latex/make.bookvars
 
