@@ -3,7 +3,7 @@ THISBOOK := $(THISDIR)
 
 include ../latex/make.bookvars
 
-FIGURES := ../../figures/gabook
+FIGURES := ../figures/gabook
 
 SOURCE_DIRS += electrodynamics
 SOURCE_DIRS += emstress
