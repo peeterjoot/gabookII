@@ -45,44 +45,29 @@ Note that the specific form of the Fourier transform used in these notes continu
 
 \section{Forced wave equation}
 \index{wave equation!forced}
-
 \subsection{One dimensional case}
-
 A good starting point is the reduced complexity one dimensional forced wave equation
-
 \begin{equation}\label{eqn:fourierMaxwell:43}
-\begin{aligned}
 \left( \inv{v^2} \partial_{tt} -\partial_{xx} \right)\psi = g
-\end{aligned}
 \end{equation}
 
-Fourier transforming to to the wave number domain, with application of integration by parts twice (each toggling the sign of the spatial derivative term) we have
-
+Fourier transforming to the wave number domain, with application of integration by parts twice (each toggling the sign of the spatial derivative term) we have
 \begin{equation}\label{eqn:fourierMaxwell:63}
-\begin{aligned}
-\inv{v^2}\hat{\psi}_{tt} - (-i k)^2 \hat{\psi} = \hat{g}
-\end{aligned}
+\inv{v^2}\hat{\psi}_{tt} - (-i k)^2 \hat{\psi} = \hat{g}.
 \end{equation}
 
 This leaves us with a linear differential equation of the following form to solve
-
 \begin{equation}\label{eqn:fourier_maxwell:waveNumEquationToSolve}
-\begin{aligned}
-f'' + \alpha^2 f = h
-\end{aligned}
+f'' + \alpha^2 f = h.
 \end{equation}
 
 Out of line solution of this can be found below in \eqnref{eqn:fourier_maxwell:solutionToWaveNumberDomainEquation}, where we have \(f = \hat{\psi}\), \(\alpha = k v\), and \(h = \hat{g} v^2\).  Our solution for the wave function in the wave number domain is now completely
 specified
-
 \begin{equation}\label{eqn:fourierMaxwell:83}
-\begin{aligned}
-\hat{\psi}(k, t) = \Abs{\frac{v}{k}} \int_{u=t_0(k)}^t \hat{g}(u) \sin( \Abs{k v} (t-u) ) du
-\end{aligned}
+\hat{\psi}(k, t) = \Abs{\frac{v}{k}} \int_{u=t_0(k)}^t \hat{g}(u) \sin( \Abs{k v} (t-u) ) du.
 \end{equation}
 
-Here because of the partial differentiation we have the flexibility to make the initial time a function of the wave number \(k\), but it is probably more natural to just set \(t_0 = -\infty\).  Also let us explicitly pick \(v > 0\) so that absolutes are only required on the factors of \(k\)
-
+Because of the partial differentiation we have the flexibility to make the initial time a function of the wave number \(k\), but it is probably more natural to just set \(t_0 = -\infty\).  Also let us explicitly pick \(v > 0\) so that absolutes are only required on the factors of \(k\)
 \begin{equation}\label{eqn:fourierMaxwell:103}
 \begin{aligned}
 \hat{\psi}(k, t) = \frac{v}{\Abs{k}} \int_{u = -\infty}^t \hat{g}(k, u) \sin( \Abs{k} v (t-u) ) du

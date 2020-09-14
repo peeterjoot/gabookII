@@ -1,4 +1,5 @@
 gabookII.V0.1.3.pdf (current version)
-- update email address
-- fix listing hyphens
-- url fixes
+- Update email address.
+- Fix listing hyphens.
+- URL fixes.
+- Make thethe.py fixes.

@@ -49,19 +49,14 @@ Computing these for \(l=1\), and disregarding any normalization these eigenfunct
 \end{equation}
 
 There is a direct relationship between these eigenfunctions with a triple of vectors associated with a point on the unit sphere.  Referring to \cref{fig:L1Associated}, observe the three doubled arrow vectors, all associated with a point on the unit sphere \(\Bx = (x,y,z) = (\sin\theta \cos\phi, \sin\theta \cos\phi, \cos\theta)\).
-
 \imageFigure{../figures/gabook/L1Associated}{Vectoring the \(l=1\) associated Legendre polynomials}{fig:L1Associated}{0.4}
 
 The normal to the \(x,y\) plane from \(\Bx\), designated \(\Bn\) has the vectorial value
-
 \begin{equation}\label{eqn:L1Associated:foo3}
-\begin{aligned}
-\Bn = \cos\theta \Be_3
-\end{aligned}
+\Bn = \cos\theta \Be_3.
 \end{equation}
 
-From the origin to the point of of the \(x,y\) plane intersection to the normal we have
-
+From the origin to the point of the \(x,y\) plane intersection to the normal we have
 \begin{equation}\label{eqn:L1Associated:foo4}
 \begin{aligned}
 \Brho = \sin\theta (\cos\phi \Be_1 + \sin\phi \Be_2) = \Be_1 \sin\theta e^{\Be_1 \Be_2 \phi}
@@ -69,17 +64,13 @@ From the origin to the point of of the \(x,y\) plane intersection to the normal 
 \end{equation}
 
 and finally in the opposite direction also in the plane and mirroring \(\Brho\) we have the last of this triplet of vectors
-
 \begin{equation}\label{eqn:L1Associated:foo5}
-\begin{aligned}
-\Brho_{-} = \sin\theta (\cos\phi \Be_1 - \sin\phi \Be_2) = \Be_1 \sin\theta e^{-\Be_1 \Be_2 \phi}
-\end{aligned}
+\Brho_{-} = \sin\theta (\cos\phi \Be_1 - \sin\phi \Be_2) = \Be_1 \sin\theta e^{-\Be_1 \Be_2 \phi}.
 \end{equation}
 
 So, if we choose to use \(i=\Be_1 \Be_2\) (the bivector for the plane normal to the z-axis), then we can in fact vectorize these eigenfunctions.  The vectors \(\Brho\) (i.e. \(\psi_1^1)\), and \(\Brho_{-}\) (i.e. \(\psi_1^{-1}\)) are both normal to \(\Bn\) (i.e. \(\psi_1^0\)), but while the vectors \(\Brho\) and \(\Brho_{-}\) are both in the plane one is produced with a counterclockwise rotation of \(\Be_1\) by \(\phi\) in the plane and the other with an opposing rotation.
 
 Summarizing, we can write the unnormalized vectors the relations
-
 \begin{equation*}
 \begin{array}{l l l}%\label{eqn:L1Associated:foo7}
 \psi_1^1 &= \Be_1 \Brho &= \sin\theta e^{\Be_1\Be_2 \phi} \\

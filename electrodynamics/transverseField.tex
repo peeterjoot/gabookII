@@ -312,7 +312,6 @@ F(x,y,z,t) &= F(x,y) e^{\pm i k z - i \omega t}
 \end{equation}
 
 and a split of the gradient into transverse and \(z\)-axis components \(\spacegrad = \spacegrad_t + \zcap \partial_z\), Maxwell's equation takes the form
-
 \begin{equation}\label{eqn:transverseField:summaryMax2}
 \begin{aligned}
 \left(\spacegrad_t \pm i k \zcap - \sqrt{\mu\epsilon}\frac{i\omega}{c}\right) F(x,y) = 0
@@ -320,15 +319,10 @@ and a split of the gradient into transverse and \(z\)-axis components \(\spacegr
 \end{equation}
 
 Writing for short \(F = F(x,y)\), we can split the field into transverse and \(z\)-axis components with the commutator and anticommutator products respectively.  For the \(z\)-axis components we have
-
 \begin{equation}\label{eqn:transverseField:foo4}
-\begin{aligned}
-F_z \zcap \equiv E_z + I B_z = \inv{2} (F \zcap + \zcap F)
-\end{aligned}
+F_z \zcap \equiv E_z + I B_z = \inv{2} (F \zcap + \zcap F).
 \end{equation}
-
-The projections onto the \(z\)-axis and and transverse directions are respectively
-
+The projections onto the \(z\)-axis and transverse directions are respectively
 \begin{equation}\label{eqn:transverseField:foo5}
 \begin{aligned}
 F_z &= \BE_z + I \BB_z = \inv{2} (F + \zcap F \zcap) \\
@@ -337,23 +331,16 @@ F_t &= \BE_t + I \BB_t = \inv{2} (F - \zcap F \zcap)
 \end{equation}
 
 With an application of the transverse gradient to the \(z\)-axis field we easily found the relation between the two field components
-
 \begin{equation}\label{eqn:transverseField:foo6}
-\begin{aligned}
-\spacegrad_t F_z &= i \left( \pm k \zcap - \sqrt{\mu\epsilon}\frac{\omega}{c}\right) F_t
-\end{aligned}
+\spacegrad_t F_z = i \left( \pm k \zcap - \sqrt{\mu\epsilon}\frac{\omega}{c}\right) F_t
 \end{equation}
 
 A left division by the multivector factor gives the total transverse field
-
 \begin{equation}\label{eqn:transverseField:foo7}
-\begin{aligned}
-F_t &= \inv{i \left( \pm k \zcap - \sqrt{\mu\epsilon}\frac{\omega}{c}\right) } \spacegrad_t F_z
-\end{aligned}
+F_t = \inv{i \left( \pm k \zcap - \sqrt{\mu\epsilon}\frac{\omega}{c}\right) } \spacegrad_t F_z.
 \end{equation}
 
 Multiplication of both the numerator and denominator by the conjugate normalizes this
-
 \begin{equation}\label{eqn:transverseField:summaryTransverseBoth}
 \begin{aligned}
 F_t &= \frac{i}{k^2 - \mu\epsilon\frac{\omega^2}{c^2}} \left( \pm k \zcap + \sqrt{\mu\epsilon}\frac{\omega}{c}\right) \spacegrad_t F_z
