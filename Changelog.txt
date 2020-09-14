@@ -1,0 +1,4 @@
+gabookII.V0.1.3.pdf (current version)
+- update email address
+- fix listing hyphens
+- url fixes
