@@ -5,7 +5,7 @@
 
 %
 %
-\chapter{Lorentz boost of Lorentz force equations}
+\mychapter{Lorentz boost of Lorentz force equations}
 \index{Lorentz force!boost}
 \label{chap:lorentzForceTx}
 %\date{May 23, 2009.  lorentzForceTx.tex}
@@ -151,31 +151,33 @@ x^0 \gamma_0
 
 Expanding out just the \(0,1\) terms changed by the transformation we have
 
-\begin{dmath*}
+\begin{equation*}
+\begin{aligned}
 \lr{
 x^0 \gamma_0
 +x^1 \gamma_1
 }
 (\cosh(\alpha) + \sigma_1 \sinh(\alpha))
-=
+&=
 x^0 \gamma_0 \cosh(\alpha)
 +x^1 \gamma_1 \cosh(\alpha)
 +x^0 \gamma_0 \sigma_1 \sinh(\alpha)
-+x^1 \gamma_1 \sigma_1 \sinh(\alpha)
-=
++x^1 \gamma_1 \sigma_1 \sinh(\alpha) \\
+&=
 x^0 \gamma_0 \cosh(\alpha)
 +x^1 \gamma_1 \cosh(\alpha)
 +x^0 \gamma_0 \gamma_1 \gamma_0 \sinh(\alpha)
-+x^1 \gamma_1 \gamma_1 \gamma_0 \sinh(\alpha)
-=
++x^1 \gamma_1 \gamma_1 \gamma_0 \sinh(\alpha) \\
+&=
 x^0 \gamma_0 \cosh(\alpha)
 +x^1 \gamma_1 \cosh(\alpha)
 -x^0 \gamma_1 \sinh(\alpha)
--x^1 \gamma_0 \sinh(\alpha)
-=
+-x^1 \gamma_0 \sinh(\alpha) \\
+&=
 \gamma_0 (x^0 \cosh(\alpha) -x^1 \sinh(\alpha) )
 +\gamma_1 (x^1 \cosh(\alpha) -x^0 \sinh(\alpha) )
-\end{dmath*}
+\end{aligned}
+\end{equation*}
 
 Writing \({x^\mu}' = L(x) \cdot \gamma^\mu\), and \(x^\mu = x \cdot \gamma^\mu\),
 and a substitution of \(\cosh(\alpha) = 1/\sqrt{1 - \Bv^2/c^2}\), and \(\alpha \vcap = \tanh^{-1}(\Bv/c)\),

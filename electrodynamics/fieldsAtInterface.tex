@@ -53,16 +53,18 @@ Given the fields in medium 1, assuming that boths sets of media are linear, we c
 
 Now the fields in interface 2 can be obtained by adding the normal and tangential projections.  For the electric field
 
-\begin{dmath}\label{eqn:fieldsAtInterface:60}
+\begin{equation}\label{eqn:fieldsAtInterface:60}
+\begin{aligned}
 \BE_2
-=
+&=
 \ncap (\ncap \cdot \BE_2 )
-+ \ncap \cdot (\ncap \wedge \BE_2)
-=
++ \ncap \cdot (\ncap \wedge \BE_2) \\
+&=
 \inv{\epsilon_2} \ncap \lr{ \epsilon_1 \ncap \cdot \BE_1 + \rho_{es} }
 +
 \ncap \cdot (\ncap \wedge \BE_1 -I \BM_s).
-\end{dmath}
+\end{aligned}
+\end{equation}
 
 %Note that this manipulation can also be done without Geometric Algebra by writing \( \BE_2 = \ncap (\ncap \cdot \BE_2 ) - \ncap \cross (\ncap \cross \BE_2) \).
 Expanding \( \ncap \cdot (\ncap \wedge \BE_1) = \BE_1 - \ncap (\ncap \cdot \BE_1) \), and \( \ncap \cdot (I \BM_s) = -\ncap \cross \BM_s \), that is
@@ -80,17 +82,19 @@ Expanding \( \ncap \cdot (\ncap \wedge \BE_1) = \BE_1 - \ncap (\ncap \cdot \BE_1
 
 For the magnetic field
 
-\begin{dmath}\label{eqn:fieldsAtInterface:100}
+\begin{equation}\label{eqn:fieldsAtInterface:100}
+\begin{aligned}
 \BB_2
-=
+&=
 \ncap (\ncap \cdot \BB_2 )
 +
-\ncap \cdot (\ncap \wedge \BB_2)
-=
+\ncap \cdot (\ncap \wedge \BB_2) \\
+&=
 \ncap \lr{ \ncap \cdot \BB_1 + \rho_{ms} }
 +
 \mu_2 \ncap \cdot \lr{ \lr{ \inv{\mu_1} \ncap \wedge \BB_1 + I \BJ_s} },
-\end{dmath}
+\end{aligned}
+\end{equation}
 
 which is
 

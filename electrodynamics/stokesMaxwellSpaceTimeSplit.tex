@@ -30,9 +30,9 @@
 
 Recall that the relativistic form of Maxwell's equation in Geometric Algebra is
 
-\begin{dmath}\label{eqn:stokesMaxwellSpaceTimeSplit:20}
+\begin{equation}\label{eqn:stokesMaxwellSpaceTimeSplit:20}
 \grad F = \inv{c \epsilon_0} J.
-\end{dmath}
+\end{equation}
 
 where \( \grad = \gamma^\mu \partial_\mu \) is the spacetime gradient, and \( J = (c\rho, \BJ) = J^\mu \gamma_\mu \) is the four (vector) current density.  The pseudoscalar for the space is denoted \( I = \gamma_0 \gamma_1 \gamma_2 \gamma_3 \), where the basis elements satisfy \( \gamma_0^2 = 1 = -\gamma_k^2 \), and a dual basis satisfies \( \gamma_\mu \cdot \gamma^\nu = \delta_\mu^\nu \).  The electromagnetic field \( F \) is a composite multivector \( F = \BE + I c \BB \).  This is actually a bivector because spatial vectors have a bivector representation in the space time algebra of the form \( \BE = E^k \gamma_k \gamma_0 \).
 
@@ -40,19 +40,19 @@ Previously, I wrote out the Stokes integrals for Maxwell's equation in GA form u
 
 Multiplication by a timelike unit vector transforms Maxwell's equation from their relativistic form.  When that vector is the standard basis timelike unit vector \( \gamma_0 \), we obtain Maxwell's equations from the point of view of a stationary observer
 
-\begin{dmath}\label{eqn:stokesMaxwellSpaceTimeSplit:40}
+\begin{equation}\label{eqn:stokesMaxwellSpaceTimeSplit:40}
 \lr{\partial_0 + \spacegrad} \lr{ \BE + c I \BB } = \inv{\epsilon_0 c} \lr{ c \rho - \BJ },
-\end{dmath}
+\end{equation}
 
 Extracting the scalar, vector, bivector, and trivector grades respectively, we have
-\begin{dmath}\label{eqn:stokesMaxwellSpaceTimeSplit:60}
+\begin{equation}\label{eqn:stokesMaxwellSpaceTimeSplit:60}
 \begin{aligned}
      \spacegrad \cdot \BE &= \frac{\rho}{\epsilon_0} \\
 c I \spacegrad \wedge \BB &= -\partial_0 \BE - \inv{\epsilon_0 c} \BJ \\
     \spacegrad \wedge \BE &= - I c \partial_0 \BB \\
  c I \spacegrad \cdot \BB &= 0.
 \end{aligned}
-\end{dmath}
+\end{equation}
 
 Each of these can be written as a curl equation
 
@@ -69,26 +69,28 @@ Each of these can be written as a curl equation
 
 a form that allows for direct application of Stokes integrals.  The first and last of these require a three parameter volume element, whereas the two bivector grade equations can be integrated using either two or three parameter volume elements.  Suppose that we have can parameterize the space with parameters \( u, v, w \), for which the gradient has the representation
 
-\begin{dmath}\label{eqn:stokesMaxwellSpaceTimeSplit:100}
+\begin{equation}\label{eqn:stokesMaxwellSpaceTimeSplit:100}
 \spacegrad = \Bx^u \partial_u + \Bx^v \partial_v + \Bx^w \partial_w,
-\end{dmath}
+\end{equation}
 
 but we integrate over a two parameter subset of this space spanned by \( \Bx(u,v) \), with area element
 
-\begin{dmath}\label{eqn:stokesMaxwellSpaceTimeSplit:120}
+\begin{equation}\label{eqn:stokesMaxwellSpaceTimeSplit:120}
+\begin{aligned}
 d^2 \Bx
-= d\Bx_u \wedge d\Bx_v
-=
+&= d\Bx_u \wedge d\Bx_v \\
+&=
 \PD{u}{\Bx}
 \wedge
 \PD{v}{\Bx}
-\,du dv
-=
+\,du dv \\
+&=
 \Bx_u
 \wedge
 \Bx_v
 \,du dv,
-\end{dmath}
+\end{aligned}
+\end{equation}
 
 as illustrated in \cref{fig:twoParameterAreaElement:twoParameterAreaElementFig1}.
 
@@ -96,54 +98,60 @@ as illustrated in \cref{fig:twoParameterAreaElement:twoParameterAreaElementFig1}
 
 Our curvilinear coordinates \( \Bx_u, \Bx_v, \Bx_w \) are dual to the reciprocal basis \( \Bx^u, \Bx^v, \Bx^w \), but we won't actually have to calculate that reciprocal basis.  Instead we need only know that it can be calculated and is defined by the relations \( \Bx_a \cdot \Bx^b = \delta_a^b \).  Knowing that we can reduce (say),
 
-\begin{dmath}\label{eqn:stokesMaxwellSpaceTimeSplit:140}
+\begin{equation}\label{eqn:stokesMaxwellSpaceTimeSplit:140}
+\begin{aligned}
 d^2 \Bx \cdot ( \spacegrad \wedge \BE )
-=
-d^2 \Bx \cdot ( \Bx^a \partial_a \wedge \BE )
-=
-(\Bx_u \wedge \Bx_v) \cdot ( \Bx^a \wedge \partial_a \BE ) \,du dv
-=
-(((\Bx_u \wedge \Bx_v) \cdot  \Bx^a) \cdot \partial_a \BE  \,du dv
-=
+&=
+d^2 \Bx \cdot ( \Bx^a \partial_a \wedge \BE ) \\
+&=
+(\Bx_u \wedge \Bx_v) \cdot ( \Bx^a \wedge \partial_a \BE ) \,du dv \\
+&=
+(((\Bx_u \wedge \Bx_v) \cdot  \Bx^a) \cdot \partial_a \BE  \,du dv \\
+&=
 d\Bx_u \cdot \partial_v \BE \,dv
 -d\Bx_v \cdot \partial_u \BE \,du,
-\end{dmath}
+\end{aligned}
+\end{equation}
 
 Because each of the differentials, for example \( d\Bx_u = (\PDi{u}{\Bx}) du \), is calculated with the other (i.e.\( v \)) held constant, this is directly integrable, leaving
 
-\begin{dmath}\label{eqn:stokesMaxwellSpaceTimeSplit:160}
+\begin{equation}\label{eqn:stokesMaxwellSpaceTimeSplit:160}
+\begin{aligned}
 \int d^2 \Bx \cdot ( \spacegrad \wedge \BE )
-=
+&=
 \int \evalrange{\lr{d\Bx_u \cdot \BE}}{v=0}{v=1}
--\int \evalrange{\lr{d\Bx_v \cdot \BE}}{u=0}{u=1}
-=
+-\int \evalrange{\lr{d\Bx_v \cdot \BE}}{u=0}{u=1} \\
+&=
 \ointclockwise d\Bx \cdot \BE.
-\end{dmath}
+\end{aligned}
+\end{equation}
 
 That direct integration of one of the parameters, while the others are held constant, is the basic idea behind Stokes theorem.
 
 The pseudoscalar grade Maxwell's equations from \cref{eqn:stokesMaxwellSpaceTimeSplit:80} require a three parameter volume element to apply Stokes theorem to.  Again, allowing for curvilinear coordinates such a differential expands as
 
-\begin{dmath}\label{eqn:stokesMaxwellSpaceTimeSplit:180}
+\begin{equation}\label{eqn:stokesMaxwellSpaceTimeSplit:180}
+\begin{aligned}
 d^3 \Bx \cdot (\spacegrad \wedge (I\BB))
-=
-(( \Bx_u \wedge \Bx_v \wedge \Bx_w ) \cdot \Bx^a ) \cdot \partial_a (I\BB) \,du dv dw
-=
+&=
+(( \Bx_u \wedge \Bx_v \wedge \Bx_w ) \cdot \Bx^a ) \cdot \partial_a (I\BB) \,du dv dw \\
+&=
  (d\Bx_u \wedge d\Bx_v) \cdot \partial_w (I\BB) dw
 +(d\Bx_v \wedge d\Bx_w) \cdot \partial_u (I\BB) du
 +(d\Bx_w \wedge d\Bx_u) \cdot \partial_v (I\BB) dv.
-\end{dmath}
+\end{aligned}
+\end{equation}
 
 Like the two parameter volume, this is directly integrable
 
-\begin{dmath}\label{eqn:stokesMaxwellSpaceTimeSplit:200}
+\begin{equation}\label{eqn:stokesMaxwellSpaceTimeSplit:200}
 \int
 d^3 \Bx \cdot (\spacegrad \wedge (I\BB))
 =
  \int \evalbar{(d\Bx_u \wedge d\Bx_v) \cdot (I\BB) }{\Delta w}
 +\int \evalbar{(d\Bx_v \wedge d\Bx_w) \cdot (I\BB)}{\Delta u}
 +\int \evalbar{(d\Bx_w \wedge d\Bx_u) \cdot (I\BB)}{\Delta v}.
-\end{dmath}
+\end{equation}
 
 After some thought (or a craft project such as that of \cref{fig:threeParameterSurface:threeParameterSurfaceFig2}) is can be observed that this is conceptually an oriented surface integral
 
@@ -163,7 +171,7 @@ Noting that \( d^2 \Bx \cdot (I\Bf) = \gpgradezero{ d^2 \Bx I B } = I (d^2\Bx \w
 %\end{dmath}
 
 In the three parameter surface integrals the specific meaning to apply to \( d^2 \Bx \wedge \Bf \) is
-\begin{dmath}\label{eqn:stokesMaxwellSpaceTimeSplit:240}
+\begin{equation}\label{eqn:stokesMaxwellSpaceTimeSplit:240}
 \begin{aligned}
 \oint d^2 \Bx \wedge \Bf
 &=
@@ -171,7 +179,7 @@ In the three parameter surface integrals the specific meaning to apply to \( d^2
 &+\int \evalbar{\lr{d\Bx_v \wedge d\Bx_w \wedge \Bf}}{\Delta u} \\
 &+\int \evalbar{\lr{d\Bx_w \wedge d\Bx_u \wedge \Bf}}{\Delta v}.
 \end{aligned}
-\end{dmath}
+\end{equation}
 
 Note that in each case only the component of the vector \( \Bf \) that is projected onto the normal to the area element contributes.
 
