@@ -39,7 +39,7 @@ Following \citep{balanis1989advanced}, Maxwell's equations in media, including b
 \spacegrad \cdot \BB = \rho_\txtm
 \end{equation}
 \end{subequations}
-
+%
 In general, it is not possible to assemble these into a single Geometric Algebra equation unless specific assumptions about the permeabilities are made, but we can still use Geometric Algebra to examine the boundary condition question.  First, these equations can be expressed in a more natural multivector form
 
 \begin{subequations}
@@ -57,7 +57,7 @@ In general, it is not possible to assemble these into a single Geometric Algebra
 \spacegrad \cdot \BB = \rho_\txtm
 \end{equation}
 \end{subequations}
-
+%
 Then duality relations can be used on the divergences to write all four equations in their curl form
 
 \begin{subequations}
@@ -75,7 +75,7 @@ Then duality relations can be used on the divergences to write all four equation
 \spacegrad \wedge (I\BB) = \rho_\txtm I.
 \end{equation}
 \end{subequations}
-
+%
 Now it is possible to employ Stokes theorem to each of these.  The usual procedure is to both use the loops of
 \cref{fig:boundaryConditionsPillBox:boundaryConditionsPillBoxFig2}
 and the pillbox of
@@ -88,7 +88,7 @@ and the pillbox of
 
 With all these relations expressed in curl form as above, we can use just the pillbox configuration to evaluate the Stokes integrals.
 Let the height \( h \) be measured along the normal axis, and assume that all the charges and currents are localized to the surface
-
+%
 \begin{equation}\label{eqn:boundaryConditionsInMedia:320}
 \begin{aligned}
 \BM &= \BM_\txts \delta( h ) \\
@@ -97,7 +97,7 @@ Let the height \( h \) be measured along the normal axis, and assume that all th
 \rho_\txtm &= \rho_{\txtm\txts} \delta( h ),
 \end{aligned}
 \end{equation}
-
+%
 where \( \ncap \wedge \BM_\txts = \ncap \wedge \BJ_\txts = 0 \).
 We can enumerate the Stokes integrals \( \int d^3 \Bx \cdot \lr{ \spacegrad \wedge \BX } = \oint_{\partial V} d^2 \Bx \cdot \BX \).  The three-volume area element will be written as \( d^3 \Bx = d^2 \Bx \wedge \ncap dh \), giving
 
@@ -116,7 +116,7 @@ We can enumerate the Stokes integrals \( \int d^3 \Bx \cdot \lr{ \spacegrad \wed
 \oint_{\partial V} d^2 \Bx \cdot (I\BB) = \int (d^2 \Bx \wedge \ncap) \cdot \lr{ \rho_{\txtm\txts} I }
 \end{equation}
 \end{subequations}
-
+%
 In the limit with \( \Delta h \rightarrow 0 \), the LHS integrals are reduced to just the top and bottom surfaces, and the \( \Delta h \) contributions on the RHS are eliminated.  With \( i = I \ncap \), and \( d^2 \Bx = dA\, i \) on the top surface, we are left with
 
 \begin{subequations}
@@ -134,9 +134,9 @@ In the limit with \( \Delta h \rightarrow 0 \), the LHS integrals are reduced to
 0 = \int dA \lr{ i \cdot \Delta (I\BB) + \rho_{\txtm\txts} }
 \end{equation}
 \end{subequations}
-
+%
 Consider the first integral.  Any component of \( \BE \) that is normal to the plane of the pillbox top (or bottom) has no contribution to the integral, so this constraint is one that effects only the tangential components \( \ncap (\ncap \wedge (\Delta \BE)) \).  Writing out the vector portion of the integrand, we have
-
+%
 \begin{equation}\label{eqn:boundaryConditionsInMedia:540}
 \begin{aligned}
 i \cdot \Delta \BE + I \cdot \lr{ I \BM_\txts }
@@ -152,9 +152,9 @@ i \cdot \Delta \BE + I \cdot \lr{ I \BM_\txts }
 \gpgradeone{ -\ncap \cross (\Delta \BE) - \BM_\txts }.
 \end{aligned}
 \end{equation}
-
+%
 The dot product (a scalar) in the two surface charge integrals can also be reduced
-
+%
 \begin{equation}\label{eqn:boundaryConditionsInMedia:560}
 \begin{aligned}
 i \cdot \Delta (I\BD)
@@ -168,7 +168,7 @@ i \cdot \Delta (I\BD)
 -\ncap \cdot \Delta \BD,
 \end{aligned}
 \end{equation}
-
+%
 so the integral equations are satisfied provided
 
 %\begin{dmath}\label{eqn:boundaryConditionsInMedia:580}

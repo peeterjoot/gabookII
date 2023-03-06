@@ -43,15 +43,15 @@ f(\Bx) &= \sum_{\Bk} \hat{f}_{\Bk} e^{ - i \Bk \cdot \Bx } \\
 \hat{f}_{\Bk} &= \inv{V} \int f(\Bx) e^{ i \Bk \cdot \Bx } d^3 x
 \end{aligned}
 \end{equation}
-
+%
 In the vector context \(\Bk\) is
-
+%
 \begin{equation}\label{eqn:planewave:40}
 \begin{aligned}
 \Bk = 2 \pi \sum_m \sigma^m \frac{k_m}{\lambda_m}
 \end{aligned}
 \end{equation}
-
+%
 Where \(\lambda_m\) are the dimensions of the volume of integration,
 \(V = \lambda_1 \lambda_2 \lambda_3\) is the volume, and
 in an index context \(\Bk = \{k_1, k_2, k_3\}\) is a triplet of integers,
@@ -60,23 +60,23 @@ positive, negative or zero.
 \subsection{Vacuum solution and constraints}
 
 We want to find (STA) bivector solutions \(F\) to the vacuum Maxwell equation
-
+%
 \begin{equation}\label{eqn:planewave:maxwell}
 \begin{aligned}
 \grad F = \gamma_0 (\partial_0 + \spacegrad) F = 0
 \end{aligned}
 \end{equation}
-
+%
 We start by assuming a Fourier series solution of the form
-
+%
 \begin{equation}\label{eqn:planewave:60}
 \begin{aligned}
 F(\Bx,t) &= \sum_{\Bk} \hat{F}_{\Bk}(t) e^{-i \Bk \cdot \Bx}
 \end{aligned}
 \end{equation}
-
+%
 For a solution term by term identity is required
-
+%
 \begin{equation}\label{eqn:planewave:80}
 \begin{aligned}
 \PD{t}{} \hat{F}_{\Bk}(t) e^{-i \Bk \cdot \Bx}
@@ -84,73 +84,73 @@ For a solution term by term identity is required
 &= i c \Bk \hat{F}_{\Bk}(t) e^{-i \Bk \cdot \Bx}
 \end{aligned}
 \end{equation}
-
+%
 With \(\Bomega = c \Bk\), we have a simple first order single variable differential equation
-
+%
 \begin{equation}\label{eqn:planewave:100}
 \begin{aligned}
 \hat{F}_{\Bk}'(t) = i \Bomega \hat{F}_{\Bk}(t)
 \end{aligned}
 \end{equation}
-
+%
 with solution
-
+%
 \begin{equation}\label{eqn:planewave:120}
 \begin{aligned}
 \hat{F}_{\Bk}(t) = e^{i \Bomega t} \hat{F}_{\Bk}
 \end{aligned}
 \end{equation}
-
+%
 Here, the constant was written as \(\hat{F}_{\Bk}\) given prior knowledge that this is will be the Fourier coefficient of the
 initial time field.  Our assumed solution is now
-
+%
 \begin{equation}\label{eqn:planewave:assummedSolutionNewStartingPoint}
 \begin{aligned}
 F(\Bx,t) &= \sum_{\Bk} e^{i \Bomega t} \hat{F}_{\Bk} e^{-i \Bk \cdot \Bx}
 \end{aligned}
 \end{equation}
-
+%
 Observe that for \(t = 0\), we have
-
+%
 \begin{equation}\label{eqn:planewave:140}
 \begin{aligned}
 F(\Bx,0) &= \sum_{\Bk} \hat{F}_{\Bk} e^{-i \Bk \cdot \Bx}
 \end{aligned}
 \end{equation}
-
+%
 which is confirmation of the Fourier coefficient role of \(\hat{F}_{\Bk}\)
-
+%
 \begin{equation}\label{eqn:planewave:160}
 \begin{aligned}
 \hat{F}_{\Bk} &= \inv{V} \int F(\Bx', 0) e^{ i \Bk \cdot \Bx' } d^3 x'
 \end{aligned}
 \end{equation}
-
+%
 \begin{equation}\label{eqn:planewave:solutionFromInitialConditions}
 \begin{aligned}
 F(\Bx,t) &= \inv{V} \sum_{\Bk} \int e^{i \Bomega t} F(\Bx', 0) e^{i \Bk \cdot (\Bx'-\Bx) } d^3 x'
 \end{aligned}
 \end{equation}
-
+%
 It is straightforward to show that \(F(\Bx, 0)\), and pseudoscalar exponentials commute.  Specifically we have
-
+%
 \begin{equation}\label{eqn:planewave:180}
 \begin{aligned}
 F e^{ i \Bk \cdot \Bx } = e^{ i \Bk \cdot \Bx } F
 \end{aligned}
 \end{equation}
-
+%
 This follows from the (STA) bivector nature of \(F\).
 
 Another commutativity relation of note is between our time phase exponential and the pseudoscalar exponentials.  This one is also straightforward to show
 and will not be done again here
-
+%
 \begin{equation}\label{eqn:planewave:200}
 \begin{aligned}
 e^{ i \Bomega t} e^{ i \Bk \cdot \Bx } = e^{ i \Bk \cdot \Bx } e^{ i \Bomega t}
 \end{aligned}
 \end{equation}
-
+%
 Lastly, and most importantly of the commutativity relations,
 it was also found that the initial field \(F(\Bx,0)\) must have both electric and magnetic field components perpendicular to all \(\Bomega \propto \Bk\) at all points
 \(\Bx\) in the integration volume.
@@ -161,25 +161,25 @@ expected there too.
 
 The planar constraint can be expressed in terms of dot products of the field components, but an alternate way of expressing the same thing was seen to be
 a statement of conjugate commutativity between this dual spatial vector exponential and the complete field
-
+%
 \begin{equation}\label{eqn:planewave:restriction}
 \begin{aligned}
 e^{ i \Bomega t} F &= F e^{ -i \Bomega t}
 \end{aligned}
 \end{equation}
-
+%
 The set of Fourier coefficients considered in the sum must be restricted to those values that \eqnref{eqn:planewave:restriction} holds.  An effective
 way to achieve this is to
 pick a specific orientation of the coordinate system so the angular
 velocity bivector is quantized in the same plane as the field.  This means that
 the angular velocity takes on integer multiples \(k\) of this value
-
+%
 \begin{equation}\label{eqn:planewave:220}
 \begin{aligned}
 i \Bomega_k = 2 \pi i c k \frac{\Bsigma}{\lambda}
 \end{aligned}
 \end{equation}
-
+%
 Here \(\Bsigma\) is a unit vector describing the perpendicular to the plane of the field, or equivalently via a duality relationship \(i \Bsigma\) is a unit bivector with the same orientation as the field.
 
 \subsection{Conjugate operations}
@@ -207,40 +207,40 @@ obtain the electric and magnetic fields via coordinates as in
 \bcH &= \sigma^m ((-i F) \cdot \sigma_m)
 \end{aligned}
 \end{equation}
-
+%
 However, due to the conjugation effect of \(\gamma_0\)
 (a particular observer's time basis vector)
 on \(F\),
 we can compute the electric and magnetic field components without resorting to coordinates
-
+%
 \begin{equation}\label{eqn:planewave:260}
 \begin{aligned}
 \bcE &= \inv{2}(F - \gamma_0 F \gamma_0 ) \\
 \bcH &= \inv{2i}(F + \gamma_0 F \gamma_0 )
 \end{aligned}
 \end{equation}
-
+%
 Such a split is expected to show up when examining the energy and momentum of our Fourier expressed field in detail.
 %Observe the conjugation effect of the multiplications with \(\gamma_0\).
 
 \subsection{Conjugate effects on the exponentials}
 
 Now, since \(\gamma_0\) anticommutes with \(i\) we have a conjugation operation on percolation of \(\gamma_0\) through the products of an exponential
-
+%
 \begin{equation}\label{eqn:planewave:280}
 \begin{aligned}
 \gamma_0 e^{i \Bk \cdot \Bx} = e^{-i \Bk \cdot \Bx} \gamma_0
 \end{aligned}
 \end{equation}
-
+%
 However, since \(\gamma_0\) also anticommutes with any spatial basis vector \(\sigma_k = \gamma_k \gamma_0\), we have for a dual spatial vector exponential
-
+%
 \begin{equation}\label{eqn:planewave:300}
 \begin{aligned}
 \gamma_0 e^{i \Bomega t} &= e^{i \Bomega t} \gamma_0
 \end{aligned}
 \end{equation}
-
+%
 We should now be armed to consider the energy momentum questions that were the desired goal of the initial treatment.
 
 \section{Plane wave Energy and Momentum in terms of Fourier coefficients}
@@ -250,15 +250,15 @@ We should now be armed to consider the energy momentum questions that were the d
 
 To obtain the energy component \(U\) of the energy momentum four
 vector (given here in CGS units)
-
+%
 \begin{equation}\label{eqn:planewave:320}
 \begin{aligned}
 T(\gamma_0) &= \inv{8\pi} F \gamma_0 \tilde{F} = \frac{-1}{8\pi}(F \gamma_0 F)
 \end{aligned}
 \end{equation}
-
+%
 we want a calculation of the field energy for the plane wave solutions of Maxwell's equation
-
+%
 \begin{equation}\label{eqn:planewave:340}
 \begin{aligned}
 U
@@ -266,13 +266,13 @@ U
 &= -\inv{16 \pi} ( F \gamma_0 F \gamma_0 + \gamma_0 F \gamma_0 F )
 \end{aligned}
 \end{equation}
-
+%
 Given the
 observed commutativity relationships, at
 least some parts of this calculation can be performed by direct multiplication of
 \eqnref{eqn:planewave:solutionFromInitialConditions} summed over two sets of wave
 number vector indices as in.
-
+%
 \begin{equation}\label{eqn:planewave:360}
 \begin{aligned}
 F(\Bx,t)
@@ -282,51 +282,51 @@ F(\Bx,t)
 %&= \inv{V} \sum_{\Bm} \int F(\Bb,0) e^{-i \Bomega_m t + i \Bm \cdot (\Bb-\Bx) } F(\Bb, 0) d^3 b
 \end{aligned}
 \end{equation}
-
+%
 However, this gets messy fast.  Looking for an alternate approach requires some mechanism for encoding the effect
 of the \(\gamma_0\) sandwich on the Fourier coefficients of the field bivector.  It has been observed that this operation has a conjugate
 effect.  The form of the stress energy four vector suggests that a natural conjugate definition will be
-
+%
 \begin{equation}\label{eqn:planewave:380}
 \begin{aligned}
 F^\dagger &= \gamma_0 \tilde{F} \gamma_0
 \end{aligned}
 \end{equation}
-
+%
 where \(\tilde{F}\) is the multivector reverse operation.
 
 This notation for conjugation is in fact what
 , for Quantum Mechanics, \citep{doran2003gap} calls the Hermitian adjoint.
 
 In this form our stress energy vector is
-
+%
 \begin{equation}\label{eqn:planewave:400}
 \begin{aligned}
 T(\gamma_0) &= \inv{8 \pi} F F^\dagger \gamma_0
 \end{aligned}
 \end{equation}
-
+%
 While the trailing \(\gamma_0\) term here may look a bit out of place,
 the energy density and the Poynting vector end up with a very complementary structure
-
+%
 \begin{equation}\label{eqn:planewave:420}
 \begin{aligned}
 U &= \inv{16 \pi} \left(F F^\dagger + (F F^\dagger)^{\tilde{}} \right) \\
 \BP &= \inv{16 \pi c} \left(F F^\dagger - (F F^\dagger)^{\tilde{}} \right)
 \end{aligned}
 \end{equation}
-
+%
 Having this conjugate operation defined it can also be applied to the
 spacetime split of the electric and the magnetic fields.  That can also now be written in a form
 that calls out the inherent complex nature of the fields
-
+%
 \begin{equation}\label{eqn:planewave:440}
 \begin{aligned}
 \bcE &= \inv{2}(F + F^\dagger ) \\
 \bcH &= \inv{2i}(F - F^\dagger )
 \end{aligned}
 \end{equation}
-
+%
 \subsection{Aside.  Applications for the conjugate in non-QM contexts}
 
 Despite the existence of the QM notation, it does not appear used in the text or ptIII notes outside of that context.
@@ -334,13 +334,13 @@ For example,
 in addition to the
 stress energy tensor and the spacetime split of the fields, an additional non-QM example
 where the conjugate operation could be used, is in the ptIII hout8 where Rotors that satisfy
-
+%
 \begin{equation}\label{eqn:planewave:460}
 \begin{aligned}
 v \cdot \gamma_0 = \gpgradezero{\gamma_0 R \gamma_0 \tilde{R}} = \gpgradezero{R^\dagger R} > 0
 \end{aligned}
 \end{equation}
-
+%
 are called proper orthochronous.  There are likely other places involving a time centric projections where this
 conjugation operator would have a natural fit.
 
@@ -351,7 +351,7 @@ conjugation operator would have a natural fit.
 For the Fourier coefficient energy calculation we now take \eqnref{eqn:planewave:assummedSolutionNewStartingPoint} as the starting point.
 
 We will need the conjugate of the field
-
+%
 \begin{equation}\label{eqn:planewave:480}
 \begin{aligned}
 F^\dagger
@@ -384,7 +384,7 @@ e^{-i \Bomega t}
 \end{aligned}
 \end{equation}
 % reverse i \Bk = \Bk~ i~ = -\Bk i = -i\Bk
-
+%
 This is
 \begin{equation}\label{eqn:planewave:conjugateField}
 \begin{aligned}
@@ -395,9 +395,9 @@ e^{i \Bk \cdot \Bx}
 e^{-i \Bomega t}
 \end{aligned}
 \end{equation}
-
+%
 So for the energy we have
-
+%
 \begin{equation}\label{eqn:planewave:500}
 \begin{aligned}
 calF^\dagger + F^\dagger F
@@ -458,7 +458,7 @@ e^{i (\Bomega_k-\Bomega_m) t +i (\Bk -\Bm) \cdot \Bx}
 \\
 \end{aligned}
 \end{equation}
-
+%
 In the first sum all the time dependence and all the spatial dependence
 that is not embedded in the Fourier coefficients themselves has been eliminated.
 What is left is something that looks like it is a real quantity (to be verified)
@@ -466,13 +466,13 @@ Assuming (also to be verified) that \(\hat{F}_{\Bk}\) commutes with its conjugat
 we have something that looks
 like a discrete version of what \citep{haykin1994cs} calls
 the Rayleigh energy theorem
-
+%
 \begin{equation}\label{eqn:planewave:520}
 \begin{aligned}
 \IIinf f(x)f^\conj(x) dx &= \IIinf \hat{f}(k)\hat{f}^\conj(k) dk
 \end{aligned}
 \end{equation}
-
+%
 Here \(\hat{f}(k)\) is the Fourier transform of \(f(x)\).
 
 Before going on it is expected that
@@ -483,7 +483,7 @@ In particular we can sum over \(k < m\), and \(k > m\) cases separately and add 
 with expectation of cancellation.  Let us see if this works out.
 
 Write \(\Bomega = 2 \pi \sigma / \lambda\), \(\Bomega_k = k \Bomega\), and \(\Bk = \Bomega/c\) then we have for these terms
-
+%
 \begin{equation}\label{eqn:planewave:540}
 \begin{aligned}
 %\sum_{\{m < k \} \cup \{ k < m \}} &
@@ -496,7 +496,7 @@ e^{ i (k-m) \Bomega \cdot \Bx/c } \left(
 \\
 \end{aligned}
 \end{equation}
-
+%
 \subsubsection{Hermitian conjugate identities}
 \index{Hermitian conjugate}
 
@@ -504,21 +504,21 @@ To get comfortable with the required manipulations, let us
 find the Hermitian conjugate equivalents to some of the familiar complex number relationships.
 
 Not all of these will be the same as in ``normal'' complex numbers.  For instance, while for complex numbers, the identities
-
+%
 \begin{equation}\label{eqn:planewave:560}
 \begin{aligned}
 z + \overbar{z} &= 2 \Re(z) \\
 \inv{i}( z - \overbar{z} ) &= 2 \Im(z)
 \end{aligned}
 \end{equation}
-
+%
 are both real numbers, we have seen for the electric and magnetic fields that we do not get scalars from the Hermitian conjugates, instead get a spatial vector where we would get a real number in complex arithmetic.  Similarly we get a (bi)vector in the dual
 space for the field minus its conjugate.
 
 Some properties:
 \begin{itemize}
 \item Hermitian conjugate of a product
-
+%
 \begin{equation}\label{eqn:planewave:580}
 \begin{aligned}
 (ab)^\dagger
@@ -530,16 +530,16 @@ Some properties:
 &= \left(\gamma_0 (b)^{\tilde{}} \gamma0\right) \left(\gamma_0 (a)^{\tilde{}} \gamma_0\right) \\
 \end{aligned}
 \end{equation}
-
+%
 This is our familiar conjugate of a product is the inverted order product of conjugates.
 \begin{equation}\label{eqn:planewave:600}
 \begin{aligned}
 (ab)^\dagger &= b^\dagger a^\dagger
 \end{aligned}
 \end{equation}
-
+%
 \item conjugate of a pure pseudoscalar exponential
-
+%
 \begin{equation}\label{eqn:planewave:620}
 \begin{aligned}
 \left(e^{i\alpha}\right)^\dagger
@@ -558,16 +558,16 @@ This is our familiar conjugate of a product is the inverted order product of con
 \gamma_0 \\
 \end{aligned}
 \end{equation}
-
+%
 But that is just
 \begin{equation}\label{eqn:planewave:640}
 \begin{aligned}
 \left(e^{i\alpha}\right)^\dagger &= e^{-i\alpha}
 \end{aligned}
 \end{equation}
-
+%
 Again in sync with complex analysis.  Good.
-
+%
 \item conjugate of a dual spatial vector exponential
 \begin{equation}\label{eqn:planewave:660}
 \begin{aligned}
@@ -591,19 +591,19 @@ Again in sync with complex analysis.  Good.
 - i\sin(\Bk)
 \end{aligned}
 \end{equation}
-
+%
 So, we have
-
+%
 \begin{equation}\label{eqn:planewave:680}
 \begin{aligned}
 \left(e^{i\Bk}\right)^\dagger &= e^{-i\Bk}
 \end{aligned}
 \end{equation}
-
+%
 Again, consistent with complex numbers for this type of multivector object.
 
 \item dual spatial vector exponential product with a conjugate.
-
+%
 \begin{equation}\label{eqn:planewave:700}
 \begin{aligned}
 F^\dagger  e^{i\Bk}
@@ -613,7 +613,7 @@ F^\dagger  e^{i\Bk}
 &= e^{i\Bk} \gamma_0 \tilde{F} \gamma_0 \\
 \end{aligned}
 \end{equation}
-
+%
 So we have conjugate commutation for both the field and its conjugate
 \begin{equation}\label{eqn:planewave:720}
 \begin{aligned}
@@ -621,11 +621,11 @@ F^\dagger e^{i\Bk} &= e^{-i\Bk} F^\dagger \\
 F e^{i\Bk} &= e^{-i\Bk} F
 \end{aligned}
 \end{equation}
-
+%
 \item pseudoscalar exponential product with a conjugate.
 
 For scalar \(\alpha\)
-
+%
 \begin{equation}\label{eqn:planewave:740}
 \begin{aligned}
 F^\dagger  e^{i\alpha}
@@ -635,37 +635,37 @@ F^\dagger  e^{i\alpha}
 &= e^{i\alpha} \gamma_0 \tilde{F} \gamma_0 \\
 \end{aligned}
 \end{equation}
-
+%
 In opposition to the dual spatial vector exponential, the plain old pseudoscalar exponentials commute with
 both the field and its conjugate.
-
+%
 \begin{equation}\label{eqn:planewave:760}
 \begin{aligned}
 F^\dagger e^{i\alpha} &= e^{i\alpha} F^\dagger \\
 F e^{i\alpha} &= e^{i\alpha} F
 \end{aligned}
 \end{equation}
-
+%
 \item Pauli vector conjugate.
-
+%
 \begin{equation}\label{eqn:planewave:780}
 \begin{aligned}
 (\sigma_k)^\dagger &= \gamma_0 \gamma_0 \gamma_k \gamma_0 = \sigma_k
 \end{aligned}
 \end{equation}
-
+%
 Jives with the fact that these in matrix form are called Hermitian.
 
 \item pseudoscalar conjugate.
-
+%
 \begin{equation}\label{eqn:planewave:800}
 \begin{aligned}
 i^\dagger = \gamma_{0} i \gamma_0 = -i
 \end{aligned}
 \end{equation}
-
+%
 \item Field Fourier coefficient conjugate.
-
+%
 \begin{equation}\label{eqn:planewave:820}
 \begin{aligned}
 (\hat{F}_{\Bk})^\dagger
@@ -673,7 +673,7 @@ i^\dagger = \gamma_{0} i \gamma_0 = -i
 \inv{V} \int e^{-i \Bk \cdot \Bx } F^\dagger(\Bx,0) d^3x = \widehat{F^\dagger}_{-\Bk}
 \end{aligned}
 \end{equation}
-
+%
 The conjugate of the \(\Bk\) Fourier coefficient is the \(-\Bk\) Fourier coefficient of the conjugate field.
 
 \end{itemize}

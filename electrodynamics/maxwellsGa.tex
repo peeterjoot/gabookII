@@ -21,7 +21,7 @@ A formulation in terms of differential forms (See: wiki:Maxwell's equations) is 
 \subsection{Introduction of complex vector electromagnetic field}
 
 To explore the ideas, the starting point is the traditional set of Maxwell's equations
-
+%
 \begin{equation}\label{eqn:maxwellsGa:20}
 \nabla \cdot \BE  = \frac {\rho} {\epsilon_0}
 \end{equation}
@@ -35,9 +35,9 @@ To explore the ideas, the starting point is the traditional set of Maxwell's equ
 c^2 \nabla \times \BB  - \frac{\partial \BE } {\partial t}
 = \frac{\BJ}{\epsilon_0}
 \end{equation}
-
+%
 It is customary in relativistic treatments of electrodynamics to introduce a four vector \((x, y, z, ict)\).  Using this as a hint, one can write the time partials in terms of \(ict\) and regrouping slightly
-
+%
 \begin{equation}\label{eqn:maxwellsGa:100}
 \nabla \cdot \BE  = \frac {\rho} {\epsilon_0}
 \end{equation}
@@ -51,7 +51,7 @@ It is customary in relativistic treatments of electrodynamics to introduce a fou
 \nabla \times (ic\BB ) + \frac{\partial \BE } {\partial (ict)}
 = i\frac{\BJ}{\epsilon_0 c}
 \end{equation}
-
+%
 There is no use of geometric or wedge products here, but the opposing signs in the two sets of curl and time partial equations is removed.  The pairs of equations can be added together without loss of information since the original equations can be recovered by taking real and imaginary parts.
 \begin{equation}\label{eqn:maxwellsGa:180}
 \nabla \cdot (\BE + ic \BB) = \frac {\rho} {\epsilon_0}
@@ -60,12 +60,12 @@ There is no use of geometric or wedge products here, but the opposing signs in t
 \nabla \times (\BE + ic \BB) + \frac{\partial (\BE + ic \BB)} {\partial (ict)}
 = i\frac{\BJ}{\epsilon_0 c}
 \end{equation}
-
+%
 It is thus natural to define a combined electrodynamic field as a complex vector, expressing the natural orthogonality of the electric and magnetic fields
 \begin{equation}\label{eqn:maxwellsGa:220}
 \BF = \BE + ic \BB.
 \end{equation}
-
+%
 The electric and magnetic fields can be recovered from this composite field by taking real and imaginary parts respectively, and we can now write Maxwell's equations in terms of this single electrodynamic field
 \begin{equation}\label{eqn:maxwellsGa:240}
 \nabla \cdot \BF = \frac {\rho} {\epsilon_0}
@@ -74,13 +74,13 @@ The electric and magnetic fields can be recovered from this composite field by t
 \nabla \times \BF + \frac{\partial \BF} {\partial (ict)}
 = i\frac{\BJ}{\epsilon_0 c}
 \end{equation}
-
+%
 \subsection{Converting the curls in the pair of Maxwell's equations for the electrodynamic field to wedge and geometric products}
 
 The above manipulations didn't make any assumptions about the structure of the ``imaginary'' denoted \(i\) above.  What was implied was a requirement that \(i^2 = -1\), and that \(i\) commutes with vectors.  Both of these conditions are met by the use of the pseudoscalar for 3D Euclidean space \(\Be_1 \Be_2 \Be_3\).  This is usually denoted \(I\) and we'll now switch notations for clarity.
 
 With multiplication of the second by a \(I\) factor to convert to a wedge product representation the remaining pair of equations can be written
-
+%
 \begin{equation}\label{eqn:maxwellsGa:280}
 \nabla \cdot \BF = \frac {\rho} {\epsilon_0}
 \end{equation}
@@ -88,25 +88,25 @@ With multiplication of the second by a \(I\) factor to convert to a wedge produc
 I\nabla \times \BF + \frac{1}{c} \frac{\partial \BF}{\partial t}
 = -\frac{\BJ}{\epsilon_0 c}
 \end{equation}
-
+%
 This last, in terms of the geometric product is,
 \begin{equation}\label{eqn:maxwellsGa:320}
 \nabla \wedge \BF + \frac{1}{c} \frac{\partial \BF}{\partial t}
 = -\frac{\BJ}{\epsilon_0 c}
 \end{equation}
-
+%
 These equations can be added without loss
-
+%
 \begin{equation}\label{eqn:maxwellsGa:340}
 \nabla \cdot \BF + \nabla \wedge \BF + \frac{1}{c} \frac{\partial \BF}{\partial t} = \frac {\rho} {\epsilon_0} - \frac{\BJ}{\epsilon_0 c}
 \end{equation}
-
+%
 Leading to the end result
-
+%
 \begin{equation}\label{eqn:maxwellsGa:5}
 \left(\frac{1}{c} \frac{\partial}{\partial t} + \nabla\right)\BF = \frac {1} {\epsilon_0}\left(\rho - \frac{\BJ}{c}\right)
 \end{equation}
-
+%
 Here we have all of Maxwell's equations as a single differential equation.
 This gives a hint why it is hard to separately solve these equations for the electric or magnetic field components (the partials of which are scattered across the original eight different equations.)  Logically the electric and magnetic field components have to be kept together.
 
@@ -115,39 +115,39 @@ Solution of this equation will require some new tools.  Minimally, some relearni
 \subsection{Components of the geometric product Maxwell equation}
 
 Explicit expansion of this equation, again using \(I={\Be}_1{\Be}_2{\Be}_3\), will yield a scalar, vector, bivector, and pseudoscalar components, and is an interesting exercise to verify the simpler field equation really describes the same thing.
-
+%
 \begin{equation}\label{eqn:maxwellsGa:360}
 \left(\frac{1}{c} \frac{\partial}{\partial t} + \nabla\right)\BF
 = \frac{1}{c} \frac{\partial \BE}{\partial t} + I\frac{1}{c} \frac{\partial \BB}{\partial t}
 + \nabla \cdot \BE + \nabla \wedge \BE + \nabla \cdot I \BB + \nabla \wedge I \BB
 \end{equation}
-
+%
 The imaginary part of the field can be multiplied out as bivector components explicitly
-
+%
 \begin{equation}\label{eqn:maxwellsGa:620}
 \begin{aligned}
 I \BB &= \Be _1 \Be _2 \Be _3 ( \Be _1 B_1 + \Be _2 B_2 + \Be _3 B_3 ) \\
 &= \Be _2 \Be _3 B_1 + \Be _3 \Be _1 B_2 + \Be _1 \Be _2 B_3
 \end{aligned}
 \end{equation}
-
+%
 which allows for direct calculation of the following
-
+%
 \begin{equation}\label{eqn:maxwellsGa:380}
 \nabla \wedge I\BB = I\nabla \cdot \BB
 \end{equation}
 \begin{equation}\label{eqn:maxwellsGa:400}
 \nabla \cdot I\BB = -\nabla \times \BB.
 \end{equation}
-
+%
 These can be demonstrated by reducing \( \gpgradethree{ \nabla I \BB } \), and \( \gpgradeone{ \nabla I \BB } \) respectively.  Using these identities and writing the electric field curl term in terms of the cross product
-
+%
 \begin{equation}\label{eqn:maxwellsGa:420}
 \nabla \wedge \BE = I \nabla \times \BE,
 \end{equation}
-
+%
 allows for grouping of real and imaginary scalar and real and imaginary vector (bivector) components
-
+%
 \begin{equation}\label{eqn:maxwellsGa:440}
    \left(\nabla \cdot \BE\right) + I\left(\nabla \cdot \BB\right)
 +
@@ -157,7 +157,7 @@ allows for grouping of real and imaginary scalar and real and imaginary vector (
 \begin{equation}\label{eqn:maxwellsGa:460}
 = \frac{\rho}{\epsilon_0} + I\left(0\right) + \left(-\frac{\BJ}{\epsilon_0 c}\right) + I \Bzero.
 \end{equation}
-
+%
 Comparing each of the left and right side components recovers the original set of four (or eight depending on your point of view) Maxwell's equations.
 
 %\section{Future: comparison to gravitation?}

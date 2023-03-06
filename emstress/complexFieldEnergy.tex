@@ -22,7 +22,7 @@
 \section{Motivation}
 
 In \citep{jackson1975cew} a complex phasor representations of the electric and magnetic fields is used
-
+%
 %\begin{subequations}
 \begin{equation}\label{eqn:complexFieldEnergy:1}
 \begin{aligned}
@@ -31,9 +31,9 @@ In \citep{jackson1975cew} a complex phasor representations of the electric and m
 \end{aligned}
 \end{equation}
 %\end{subequations}
-
+%
 Here the vectors \(\bcE\) and \(\bcB\) are allowed to take on complex values.  Jackson uses the real part of these complex vectors as the true fields, so one is really interested in just these quantities
-
+%
 %\begin{subequations}
 \begin{equation}\label{eqn:complexFieldEnergy:2}
 \begin{aligned}
@@ -42,15 +42,15 @@ Here the vectors \(\bcE\) and \(\bcB\) are allowed to take on complex values.  J
 \end{aligned}
 \end{equation}
 %\end{subequations}
-
+%
 but carry the whole thing in manipulations to make things simpler.  It is stated that the energy for such complex vector fields takes the form (ignoring constant scaling factors and units)
-
+%
 \begin{equation}\label{eqn:complexFieldEnergy:3}
 \begin{aligned}
 \text{Energy} \propto \BE \cdot \conjugateStar{\BE} + \BB \cdot \conjugateStar{\BB}.
 \end{aligned}
 \end{equation}
-
+%
 In some ways this is an obvious generalization.  Less obvious is how this and the Poynting vector are related in their corresponding conservation relationships.
 
 Here I explore this, employing a Geometric Algebra representation of the energy momentum tensor based on the real field representation found in \citep{doran2003gap}.  Given the complex valued fields and a requirement that both the real and imaginary parts of the field satisfy Maxwell's equation, it should be possible to derive the conservation relationship between the energy density and Poynting vector from first principles.
@@ -58,14 +58,14 @@ Here I explore this, employing a Geometric Algebra representation of the energy 
 \section{Review of GA formalism for real fields}
 
 In SI units the Geometric algebra form of Maxwell's equation is
-
+%
 \begin{equation}
 \label{eqn:complexFieldEnergy:4}
 \grad F = J/\epsilon_0 c,
 \end{equation}
-
+%
 where one has for the symbols
-
+%
 %\begin{subequations}
 \begin{equation}
 \label{eqn:complexFieldEnergy:5}
@@ -81,15 +81,15 @@ J &= c \rho \gamma_0 + J^k \gamma_k \\
 \end{aligned}
 \end{equation}
 %\end{subequations}
-
+%
 The symmetric electrodynamic energy momentum tensor for real fields \(\BE\) and \(\BB\) is
-
+%
 \begin{equation}\label{eqn:complexFieldEnergy:6}
 T(a) = \frac{-\epsilon_0}{2} F a F = \frac{\epsilon_0}{2} F a \tilde{F}.
 \end{equation}
-
+%
 It may not be obvious that this is in fact a four vector, but this can be seen since it can only have grade one and three components, and also equals its reverse implying that the grade three terms are all zero.  To illustrate this explicitly consider the components of \(T^{\mu 0}\)
-
+%
 \begin{equation}\label{eqn:complexFieldEnergy:90}
 \begin{aligned}
 \frac{2}{\epsilon_0} T\left(\gamma^0\right)
@@ -100,7 +100,7 @@ It may not be obvious that this is in fact a four vector, but this can be seen s
 &= \left(\BE^2 + c^2 \BB^2\right) \gamma^0 + 2 c \left( \BE \cross \BB \right) \gamma^0 \\
 \end{aligned}
 \end{equation}
-
+%
 Our result is a four vector in the Dirac basis as expected
 
 %\begin{subequations}
@@ -113,21 +113,21 @@ T^{k 0} &= c \epsilon_0 \left(\BE \cross \BB\right)_k
 \end{aligned}
 \end{equation}
 %\end{subequations}
-
+%
 Similar expansions are possible for the general tensor components \(T^{\mu\nu}\) but lets defer this more general expansion until considering complex valued fields.  The main point here is to remind oneself how to express the energy momentum tensor in a fashion that is natural in a GA context.  We also know that one has a conservation relationship associated with the divergence of this tensor \(\grad \cdot T(a)\) (ie. \(\partial_\mu T^{\mu\nu}\)), and want to rederive this relationship after guessing what form the GA expression for the energy momentum tensor takes when one allows the field vectors to take complex values.
 
 \section{Computing the conservation relationship for complex field vectors}
 
 As in \eqnref{eqn:complexFieldEnergy:3}, if one wants
-
+%
 \begin{equation}\label{eqn:complexFieldEnergy:8}
 \begin{aligned}
 T^{0 0} \propto \BE \cdot \conjugateStar{\BE} + c^2 \BB \cdot \conjugateStar{\BB},
 \end{aligned}
 \end{equation}
-
+%
 it is reasonable to assume that our energy momentum tensor will take the form
-
+%
 \begin{equation}\label{eqn:complexFieldEnergy:9}
 \begin{aligned}
 T(a) &=
@@ -135,13 +135,13 @@ T(a) &=
 = \frac{\epsilon_0}{2} \Real \left( \conjugateStar{F} a \tilde{F} \right)
 \end{aligned}
 \end{equation}
-
+%
 For real vector fields this reduces to the previous results and should produce the desired mix of real and imaginary dot products for the energy density term of the tensor.  This is also a real four vector even when the field is complex, so the energy density and power density terms will all be real valued, which seems desirable.
 
 \subsection{Expanding the tensor.  Easy parts}
 
 As with real fields expansion of \(T(a)\) in terms of \(\BE\) and \(\BB\) is simplest for \(a = \gamma^0\).  Let us start with that.
-
+%
 \begin{equation}\label{eqn:complexFieldEnergy:130}
 \begin{aligned}
 \frac{4}{\epsilon_0} T(\gamma^0) \gamma_0
@@ -160,9 +160,9 @@ As with real fields expansion of \(T(a)\) in terms of \(\BE\) and \(\BB\) is sim
 + 2 c ( \BE \cross \conjugateStar{\BB} + \conjugateStar{\BE} \cross \BB ).
 \end{aligned}
 \end{equation}
-
+%
 This gives
-
+%
 \begin{equation}\label{eqn:complexFieldEnergy:20}
 \begin{aligned}
 T(\gamma^0)
@@ -171,11 +171,11 @@ T(\gamma^0)
 + \frac{\epsilon_0 c}{2} ( \BE \cross \conjugateStar{\BB} + \conjugateStar{\BE} \cross \BB ) \gamma^0
 \end{aligned}
 \end{equation}
-
+%
 The sum of \(\conjugateStar{F} a F\) and its conjugate has produced the desired energy density expression.  An implication of this is that one can form and take real parts of a complex Poynting vector \(\BS \propto \BE \cross \conjugateStar{\BB}\) to calculate the momentum density.  This is stated but not demonstrated in Jackson, perhaps considered too obvious or messy to derive.
 
 Observe that the a choice to work with complex valued vector fields gives a nice consistency, and one has the same factor of \(1/2\) in both the energy and momentum terms.  While the energy term is obviously real, the momentum terms can be written in an explicitly real notation as well since one has a quantity plus its conjugate.  Using a more conventional four vector notation (omitting the explicit Dirac basis vectors), one can write this out as a strictly real quantity.
-
+%
 \begin{equation}\label{eqn:complexFieldEnergy:21}
 T(\gamma^0)
 =
@@ -183,13 +183,13 @@ T(\gamma^0)
 \left( \inv{2}\left(\BE \cdot \conjugateStar{\BE} + c^2 \BB \cdot \conjugateStar{\BB}\right),
 c \Real( \BE \cross \conjugateStar{\BB} ) \right)
 \end{equation}
-
+%
 Observe that when the vector fields are restricted to real quantities, the conjugate and real part operators can be dropped and the real vector field result \eqnref{eqn:complexFieldEnergy:7} is recovered.
 
 \subsection{Expanding the tensor.  Messier parts}
 
 I intended here to compute \(T(\gamma^k)\), and my starting point was a decomposition of the field vectors into components that anticommute or commute with \(\gamma^k\)
-
+%
 %\begin{subequations}
 \begin{equation}\label{eqn:complexFieldEnergy:22}
 \begin{aligned}
@@ -198,9 +198,9 @@ I intended here to compute \(T(\gamma^k)\), and my starting point was a decompos
 \end{aligned}
 \end{equation}
 %\end{subequations}
-
+%
 The components parallel to the spatial vector \(\sigma_k = \gamma_k \gamma_0\) are anticommuting \(\gamma^k \BE_\parallel = -\BE_\parallel \gamma^k\), whereas the perpendicular components commute \(\gamma^k \BE_\perp = \BE_\perp \gamma^k\).  The expansion of the tensor products is then
-
+%
 \begin{equation}\label{eqn:complexFieldEnergy:150}
 \begin{aligned}
 (\conjugateStar{F} \gamma^k \tilde{F} + \tilde{F} \gamma^k \conjugateStar{F}) \gamma_k
@@ -212,7 +212,7 @@ The components parallel to the spatial vector \(\sigma_k = \gamma_k \gamma_0\) a
 &+ (\BE + I c \BB) ( {\BE_\parallel}^\conj - {\BE_\perp}^\conj + c I ( -{\BB_\parallel}^\conj + {\BB_\perp}^\conj ) ) \\
 \end{aligned}
 \end{equation}
-
+%
 This is not particularly pretty to expand out.  I did attempt it, but my result looked wrong.  For the application I have in mind I do not actually need anything more than \(T^{\mu 0}\), so rather than show something wrong, I will just omit it (at least for now).
 %.  For all the quadratic electric field products we have
 %
@@ -294,7 +294,7 @@ This is not particularly pretty to expand out.  I did attempt it, but my result 
 \subsection{Calculating the divergence}
 
 Working with \eqnref{eqn:complexFieldEnergy:9}, let us calculate the divergence and see what one finds for the corresponding conservation relationship.
-
+%
 \begin{equation}\label{eqn:complexFieldEnergy:170}
 \begin{aligned}
 \frac{4}{\epsilon_0} \grad \cdot T(a)
@@ -325,18 +325,18 @@ J \cdot \conjugateStar{F}
 &= \frac{4}{\epsilon_0 c} a \cdot \Real ( J \cdot \conjugateStar{F} ).
 \end{aligned}
 \end{equation}
-
+%
 We have then for the divergence
-
+%
 \begin{equation}\label{eqn:complexFieldEnergy:10}
 \begin{aligned}
 \grad \cdot T(a)
 &= a \cdot \inv{ c } \Real \left( J \cdot \conjugateStar{F} \right).
 \end{aligned}
 \end{equation}
-
+%
 Lets write out \(J \cdot \conjugateStar{F}\) in the (stationary) observer frame where \(J = (c\rho + \BJ) \gamma_0\).  This is
-
+%
 \begin{equation}\label{eqn:complexFieldEnergy:190}
 \begin{aligned}
 J \cdot \conjugateStar{F}
@@ -350,9 +350,9 @@ J \cdot \conjugateStar{F}
 \right) \gamma_0
 \end{aligned}
 \end{equation}
-
+%
 Writing out the four divergence relationships in full one has
-
+%
 %\begin{subequations}
 \begin{equation}\label{eqn:complexFieldEnergy:11}
 \begin{aligned}
@@ -361,11 +361,11 @@ Writing out the four divergence relationships in full one has
 \end{aligned}
 \end{equation}
 %\end{subequations}
-
+%
 Just as in the real field case one has a nice relativistic split into energy density and force (momentum change) components, but one has to take real parts and conjugate half the terms appropriately when one has complex fields.
 
 Combining the divergence relation for \(T(\gamma^0)\) with \eqnref{eqn:complexFieldEnergy:21} the conservation relation for this subset of the energy momentum tensor becomes
-
+%
 \begin{equation}\label{eqn:complexFieldEnergy:30}
 \begin{aligned}
 \inv{c} \PD{t}{}\frac{\epsilon_0}{2}(\BE \cdot \conjugateStar{\BE} + c^2 \BB \cdot \conjugateStar{\BB})
@@ -374,9 +374,9 @@ Combining the divergence relation for \(T(\gamma^0)\) with \eqnref{eqn:complexFi
 - \inv{c} \Real( \BJ \cdot \conjugateStar{\BE} )
 \end{aligned}
 \end{equation}
-
+%
 Or
-
+%
 \begin{equation}\label{eqn:complexFieldEnergy:30b}
 \begin{aligned}
 \PD{t}{}\frac{\epsilon_0}{2}(\BE \cdot \conjugateStar{\BE} + c^2 \BB \cdot \conjugateStar{\BB})
@@ -385,7 +385,7 @@ Or
 = 0
 \end{aligned}
 \end{equation}
-
+%
 It is this last term that puts some meaning behind Jackson's treatment since we now know how the energy and momentum are related as a four vector quantity in this complex formalism.
 
 While I have used geometric algebra to get to this final result, I would be interested to compare how the intermediate mess compares with the same complex field vector result obtained via traditional vector techniques.  I am sure I could try this myself, but am not interested enough to attempt it.

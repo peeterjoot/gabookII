@@ -26,37 +26,37 @@ of it.  Also informative as background is the following excellent
 introduction to the STA form of Maxwell's equation.
 
 Stokes equation applied to a bivector takes the following form
-
+%
 \begin{equation}\label{eqn:stokesMax:summaryStokesVolume}
 \iiint (\grad \wedge F) \cdot d^3\Bx = \oiintclockwise F \cdot d^2\Bx,
 \end{equation}
-
+%
 where we will write \(F\) as the electromagnetic field bivector, and apply
 it to Maxwell's equation
-
+%
 \begin{equation}\label{eqn:stokesMax:maxwell}
 \grad F = J/\epsilon_0 c.
 \end{equation}
-
+%
 Taking vector and trivector parts we have two equations
 \begin{equation}\label{eqn:stokesMax:maxwellv}
 \grad \cdot F = J/\epsilon_0 c,
 \end{equation}
-
+%
 and
 \begin{equation}\label{eqn:stokesMax:maxwellt}
 \grad \wedge F = 0.
 \end{equation}
-
+%
 \subsection{Trivector equation part}
 
 The second of these, \eqnref{eqn:stokesMax:maxwellt}, we can apply Stokes to
 directly:
-
+%
 \begin{equation}
 \iiint (\grad \wedge F) \cdot d^3 \Bx = \oiintclockwise F \cdot d^2\Bx = 0.
 \end{equation}
-
+%
 This area integral is a flux like quantity.  Suppose we call this the field flux, then this says
 says
 the flux of the combined electromagnetic field through any surface is zero
@@ -69,11 +69,11 @@ a spacetime (area times time) ``volume'' to integrate over, in which case
 This does not seem like a result that I am familiar with based on the traditional
 vector forms of Maxwell's equation.  Perhaps it is recognizable in terms of
 \(\BE\) and \(\BB\) explicitly:
-
+%
 \begin{equation}\label{eqn:stokesMax:gaussmagnetostatics}
 \oiintclockwise \BE \cdot d^2\Bx = - c \oiintclockwise \BB \cdot (d^2\Bx I)
 \end{equation}
-
+%
 On the surface this does not look like a familiar identity.  It is in fact Gauss's law for magneto-statics, which will be shown
 later.
 
@@ -89,7 +89,7 @@ bivectors,
 Moving on to the charge and current dependent vector terms of Maxwell's equation, we want express \eqnref{eqn:stokesMax:maxwellv} as a spacetime curl so that we can apply stokes to it.
 
 We can do this by temporarily writing our field in terms of a potential as well its dual bivector.
-
+%
 \begin{equation}\label{eqn:stokesMaxwellApplication:20}
 \begin{aligned}
 F = \grad \wedge A = I D
@@ -111,14 +111,14 @@ F = \grad \wedge A = I D
 &= - I (\grad \wedge D) \\
 \end{aligned}
 \end{equation}
-
+%
 or
 \begin{equation}\label{eqn:stokesMaxwellApplication:60}
 \begin{aligned}
 I \grad F = \grad \wedge D.
 \end{aligned}
 \end{equation}
-
+%
 Applying stokes we have
 \begin{equation}\label{eqn:stokesMaxwellApplication:80}
 \begin{aligned}
@@ -133,12 +133,12 @@ Applying stokes we have
 \inv{\epsilon_0 c} \int J \cdot (d^3\Bx I) &= \\
 \end{aligned}
 \end{equation}
-
+%
 Or
 \begin{equation}\label{eqn:stokesMax:maxwellint}
 \oiintctrclockwise F \cdot (d^2\Bx I) = \int \frac{J}{\epsilon_0 c} \cdot (d^3\Bx I)
 \end{equation}
-
+%
 This is the integral form of the vector part of Maxwell's equation \eqnref{eqn:stokesMax:maxwell}.
 This does not look terribly familiar, but we are not used to
 seeing Maxwell's equations in a non-disassembled form.
@@ -166,7 +166,7 @@ have not been made.
 \subsection{Zero current density. Gauss's law for Electrostatics}
 
 With \(J = c \rho \gamma_0\), the integral form of Maxwell's equation becomes
-
+%
 \begin{equation}\label{eqn:stokesMaxwellApplication:100}
 \begin{aligned}
 \oiintctrclockwise F \cdot (d^2\Bx I)
@@ -175,35 +175,35 @@ With \(J = c \rho \gamma_0\), the integral form of Maxwell's equation becomes
 &= -\inv{\epsilon_0} {\gamma_0}^2 \int \frac{\rho}{\epsilon_0} \gpgradezero{\gamma_{123} d^3\Bx} \\
 \end{aligned}
 \end{equation}
-
+%
 From this we see that, in the absence of currents the LHS integral must be zero unless the volume is purely spatial.  Denoting the boundary of a spacetime volume as \(\partial A c t\), this is
-
+%
 \begin{equation}\label{eqn:stokesMaxwellApplication:120}
 \begin{aligned}
 \oiintctrclockwise_{\partial {A c t}} F \cdot (d^2\Bx I) &= 0.
 \end{aligned}
 \end{equation}
-
+%
 For a purely spatial volume the dual surfaces \(d^2\Bx I\) always includes a spacetime bivector, therefore the magnetic field contributes nothing
-
+%
 \begin{equation*}
 \oiintctrclockwise_{\partial V} I c B \cdot (d^2\Bx I) =
 -c \oiintctrclockwise_{\partial V} B \cdot d^2\Bx = 0
 \end{equation*}
-
+%
 Although this looks similar to the integral equivalent of \(\spacegrad \cdot B = 0\), we should look elsewhere for that since
 that is true for the non-zero current density case too.
 
 That leaves
-
+%
 \begin{equation}\label{eqn:stokesMaxwellApplication:140}
 \begin{aligned}
 \oiintctrclockwise E \cdot (d^2\Bx I) &= -\inv{\epsilon_0} {\gamma_0}^2 \int_{V} \rho \gpgradezero{\gamma_{123} d^3\Bx} \\
 \end{aligned}
 \end{equation}
-
+%
 Letting \(d^3 \Bx = dx^1 dx^2 dx^3 \gamma_{123}\).  Within the charge integral becomes
-
+%
 \begin{equation}\label{eqn:stokesMaxwellApplication:160}
 \begin{aligned}
 -\inv{\epsilon_0} {\gamma_0}^2 \int_{V} \rho \gpgradezero{\gamma_{123} d^3\Bx}
@@ -219,11 +219,11 @@ Letting \(d^3 \Bx = dx^1 dx^2 dx^3 \gamma_{123}\).  Within the charge integral b
 &= -\inv{\epsilon_0} \int_{V} \rho dx^1 dx^2 dx^3
 \end{aligned}
 \end{equation}
-
+%
 To put this in correspondence with the forms we are used to consider the surfaces separately.  For the dual to the
 front surface (see: \chapcite{PJStokes1})
 we have
-
+%
 \begin{equation}\label{eqn:stokesMaxwellApplication:180}
 \begin{aligned}
 d^2 \Bx I
@@ -235,7 +235,7 @@ d^2 \Bx I
 &= dx^1 dx^2 \sigma_3
 \end{aligned}
 \end{equation}
-
+%
 For the left surface
 \begin{equation}\label{eqn:stokesMaxwellApplication:200}
 \begin{aligned}
@@ -248,7 +248,7 @@ d^2 \Bx I
 &= -dx^3 dx^2 \sigma_1 \\
 \end{aligned}
 \end{equation}
-
+%
 and for the top
 \begin{equation}\label{eqn:stokesMaxwellApplication:220}
 \begin{aligned}
@@ -260,7 +260,7 @@ d^2 \Bx I
 &= -dx^1 dx^3 \sigma_2 \\
 \end{aligned}
 \end{equation}
-
+%
 Assembling results, writing \((x^1, x^2, x^3) = (x,y,z)\) we have
 %\begin{align*}
 %\iint
@@ -283,13 +283,13 @@ Assembling results, writing \((x^1, x^2, x^3) = (x,y,z)\) we have
 (E_z(x, y_1, z) - E_z(x, y_0, z)) dx dz \\
 \end{aligned}
 \end{equation}
-
+%
 This is Gauss's law for electrostatics in integral form
-
+%
 \begin{equation}
 \iint \BE \cdot \ncap dA = \iiint \frac{\rho}{\epsilon_0} dV
 \end{equation}
-
+%
 Although this extraction method is easy to understand, it is apparent that having only a pictorial way of enumerating the
 oriented bivector
 area elements is not efficient for high level computation.  Revisiting the stokes derivation with a more algebraic enumeration
@@ -300,11 +300,11 @@ of the surfaces should be done!
 \index{magnetostatics}
 
 Return now to \eqnref{eqn:stokesMax:gaussmagnetostatics}, which resulted from considering the trivector part of Maxwell's equation
-
+%
 \begin{equation}
 \oiintclockwise \BE \cdot d^2\Bx = - c \oiintclockwise \BB \cdot (d^2\Bx I).
 \end{equation}
-
+%
 To start some observations can be made.
 
 Only the spacetime surfaces of the volume
@@ -312,7 +312,7 @@ contribute to the LHS integral since \(\sigma_i \cdot (\gamma_j \wedge \gamma_k)
 
 For the RHS, only the purely spatial surfaces contribute to that \(\BB\) integral, since the dual surface \(d^2\Bx I\) must have a spacetime component for that dot product to be non-zero.  We have also just enumerated these dual surface area elements \(d^2 \Bx I\) for a purely
 spatial surface, therefore with a \(E,B\) substitution we must have
-
+%
 \begin{equation}\label{eqn:stokesMaxwellApplication:260}
 \begin{aligned}
 0 &=
@@ -324,13 +324,13 @@ spatial surface, therefore with a \(E,B\) substitution we must have
 (B_z(x, y_1, z) - B_z(x, y_0, z)) dx dz
 \end{aligned}
 \end{equation}
-
+%
 or, more compactly
-
+%
 \begin{equation}
 \iint \BB \cdot \ncap dA = 0
 \end{equation}
-
+%
 For any current or charge distribution.  We have therefore obtained two of the eight Maxwell's equations.
 
 \subsection{Zero charge.  Current density in single direction}
@@ -338,7 +338,7 @@ For any current or charge distribution.  We have therefore obtained two of the e
 
 Next to consider is \(J = j^i \gamma_i\).  For simplicity, consider current in only one direction,
 taking \(J = j^1 \gamma_1\).  The exercise will be to compute the integrals of \eqnref{eqn:stokesMax:maxwellint}.
-
+%
 \begin{equation}\label{eqn:stokesMaxwellApplication:280}
 \begin{aligned}
 \oiintclockwise F \cdot (I d^2\Bx)
@@ -346,7 +346,7 @@ taking \(J = j^1 \gamma_1\).  The exercise will be to compute the integrals of \
 &= \int \frac{j^1}{\epsilon_0 c} \gamma_1 \cdot (I d^3\Bx) \\
 \end{aligned}
 \end{equation}
-
+%
 Unlike the calculations for the Gauss's law equations above, this one
 will be done using the area orientation
 methods from \chapcite{PJStokes2} since algebraically enumerating the surfaces
@@ -357,7 +357,7 @@ Starting with the volume element, one can observe that the current density
 will not contribute to the boundary integral unless \(d^3\Bx\) has no \(\gamma_1\)
 component, thus for a rectangular prism integration spacetime volume let
 \(d^3 \Bx = \gamma_{023} dx^0 dx^2 dx^3\)
-
+%
 \begin{equation}\label{eqn:stokesMaxwellApplication:300}
 \begin{aligned}
 \gamma_1 \cdot (I d^3\Bx)
@@ -368,11 +368,11 @@ component, thus for a rectangular prism integration spacetime volume let
 &= - dx^0 dx^2 dx^3 \\
 \end{aligned}
 \end{equation}
-
+%
 Now for all the surfaces we want to calculate
 \(I d^2\Bx\) for each of the surfaces.
 For each of \(\mu \in \{0, 2, 3\}\), calculation of \(I (d^2\Bx)_\mu\) is required where
-
+%
 \begin{equation}\label{eqn:stokesMaxwellApplication:320}
 \begin{aligned}
 (d^2 \Bx)_\mu &= d^3 \Bx \cdot \Br^{\mu} \\
@@ -383,7 +383,7 @@ For each of \(\mu \in \{0, 2, 3\}\), calculation of \(I (d^2\Bx)_\mu\) is requir
 \Br^\mu &= \gamma^\mu
 \end{aligned}
 \end{equation}
-
+%
 Calculating the surfaces
 \begin{equation}\label{eqn:stokesMaxwellApplication:340}
 \begin{aligned}
@@ -397,9 +397,9 @@ I (d^2 \Bx)_\mu \frac{dx^{\mu}}{dx^0 dx^2 dx^3}
 &= \gamma^{\mu} \wedge \gamma^{1} \\
 \end{aligned}
 \end{equation}
-
+%
 Putting things back together we have
-
+%
 \begin{equation}\label{eqn:stokesMaxwellApplication:360}
 \begin{aligned}
 -\int j^1 dx^0 dx^2 dx^3 = \int \sum_{\mu = 0,2,3}
@@ -407,9 +407,9 @@ Putting things back together we have
 \frac{dx^0 dx^2 dx^3}{dx^{\mu}}
 \end{aligned}
 \end{equation}
-
+%
 Now, for \(\mu=0\) we pick up the electric field component of the field
-
+%
 \begin{equation}\label{eqn:stokesMaxwellApplication:380}
 \begin{aligned}
 F \cdot \gamma^{01}
@@ -417,7 +417,7 @@ F \cdot \gamma^{01}
 &= E^i,
 \end{aligned}
 \end{equation}
-
+%
 and for \(\mu=2,3\) we pick up magnetic field components
 \begin{equation}\label{eqn:stokesMaxwellApplication:400}
 \begin{aligned}
@@ -426,9 +426,9 @@ F \cdot \gamma^{\mu1}
 &= -\epsilon_{1 \mu k} c B^k \gamma_{1\mu} \cdot \gamma^{\mu1}.
 \end{aligned}
 \end{equation}
-
+%
 For \(\mu=2\) this is \(- c B^3\), and for \(\mu=3\), \(-\epsilon_{132} c B^2 = c B^2\), so we have
-
+%
 \begin{equation}\label{eqn:stokesMaxwellApplication:420}
 \begin{aligned}
 0
@@ -443,43 +443,43 @@ For \(\mu=2\) this is \(- c B^3\), and for \(\mu=3\), \(-\epsilon_{132} c B^2 = 
 &= \int dx^0 \int dx^2 dx^3 \left(\frac{j^1}{c\epsilon_0} + \inv{c}\PD{t}{E^1} +c\PD{x^3}{B^2} -c\PD{x^2}{B^3} \right) \\
 \end{aligned}
 \end{equation}
-
+%
 If this is zero for all time intervals, then the inner integral is also zero.  Utilizing \(c^2\mu_0\epsilon_0 = 1\) this is
-
+%
 \begin{equation}\label{eqn:stokesMaxwellApplication:440}
 \begin{aligned}
 0
 &= \int dx^2 dx^3 \left( \mu_0 \left( j^1 + \epsilon_0 \PD{t}{E^1} \right) + \left( \PD{x^3}{B^2} -\PD{x^2}{B^3} \right) \right).
 \end{aligned}
 \end{equation}
-
+%
 Writing \(d\BA = \sigma_1 dx^2 dx^3\), \(\Bj = j^1 \sigma_1\), \(\BE = E^1 \sigma_1\), and \(\BB = B^i \sigma_i\) we can pick off
 the differential form of the Maxwell-Ampere equation
-
+%
 \begin{equation}
 \spacegrad \cross \BB = \mu_0 \left( \Bj + \epsilon_0 \PD{t}{\BE} \right),
 \end{equation}
-
+%
 as well as the integral form
 \begin{equation}
 \int (\spacegrad \cross \BB) \cdot d\BA
 = \mu_0 \left(\int \Bj \cdot d\BA + \epsilon_0 \int \PD{t}{\BE} \cdot d\BA \right)
 \end{equation}
-
+%
 Both of these forms come straight from the application of the generalized Stokes equation integrating an appropriate
 spacetime volume.
 
 Now it is normal to have the spatial curl of \(\BB\) written as a closed loop integral.  Stokes can be employed
 again to get exactly that form.  This really just undoes the fact that the partials to used as a convenience enumerate
 exactly those loop boundaries (although they were originally oriented area boundaries).
-
+%
 \begin{equation}\label{eqn:stokesMaxwellApplication:460}
 \begin{aligned}
 \int \PD{x^3}{B^2} dx^3 &= B^2(t, x, y, z_1) - B^2(t, x, y, {z}_0) \\
 \int \PD{x^2}{B^3} dx^2 &= B^3(t, x, {y}_1, z) - B^3(t, x, {y}_0, z)
 \end{aligned}
 \end{equation}
-
+%
 Also observe that this whole treatment was
 done with \(J = j^1 \gamma_1\) only.  It is not hard to see that doing the same with \(j^i\) and summing over \(\sigma_i\)
 will produce the same result.  Of course more care is required to handle the more abstract symbolic indices since a nice
@@ -499,27 +499,27 @@ that our remaining three (one three-vector) equation will come from
 integrating the trivector parts over a spacetime volume.
 
 Stokes' gives us
-
+%
 \begin{equation*}
 \int_V (\grad \wedge F) \cdot d^3 \Bx = \int_{\partial V} F \cdot (d^2\Bx)
 \end{equation*}
-
+%
 Picking a spacetime volume element, and corresponding area elements
-
+%
 \begin{equation}\label{eqn:stokesMaxwellApplication:480}
 \begin{aligned}
 d^3 \Bx &= \gamma_{0ij} dx^0 dx^i dx^j \\
 (d^2 \Bx)_\mu &= (\gamma_{0ij} \cdot \gamma^\mu) \frac{dx^0 dx^i dx^j}{dx^\mu}
 \end{aligned}
 \end{equation}
-
+%
 Our area integral (expanding boundaries as one more integral of partials) is
 \begin{equation*}
 \int \sum_{\mu = 0,i,j} dx^0 dx^i dx^j \left( \PD{x^\mu}{F} \cdot (\gamma_{0ij}\cdot\gamma^\mu) \right).
 \end{equation*}
-
+%
 For the dot products of the area elements we have
-
+%
 \begin{equation*}
 \left\{
 \begin{array}{l l}
@@ -528,16 +528,16 @@ For the dot products of the area elements we have
 -\gamma_{0j} = \sigma_j & \quad \mbox{if \(\mu = i\)} \\
 \end{array} \right.
 \end{equation*}
-
+%
 Our field derivatives in coordinates are
-
+%
 \begin{equation*}
 \PD{x^\mu}{F}
 = \PD{x^\mu}{E^m} \sigma_m - \epsilon_{klm} c \PD{x^\mu}{B^m} \gamma_{kl}
 \end{equation*}
-
+%
 Observe that \(\mu\ne0\) selects only the electric field components, and \(\mu=0\) only the magnetic field components are selected.  Specifically
-
+%
 \begin{equation*}
 \PD{x^\mu}{F} =
 \left\{
@@ -547,9 +547,9 @@ Observe that \(\mu\ne0\) selects only the electric field components, and \(\mu=0
 \PD{x^i}{E^m}\sigma_m \cdot (\sigma_j) &= \PD{x^i}{E^j} & \quad \mbox{if \(\mu = i\)} \\
 \end{array} \right.
 \end{equation*}
-
+%
 Reassembling the integral we have
-
+%
 \begin{equation}\label{eqn:stokesMaxwellApplication:500}
 \begin{aligned}
 0
@@ -557,15 +557,15 @@ Reassembling the integral we have
 &= \int dx^0 \epsilon_{ijk} \int dx^i dx^j \sigma_k \left( \sigma_k \epsilon_{ijk} \left(\PD{x^i}{E^j} -\PD{x^j}{E^i}\right) + \sigma_k \PD{t}{B^k} \right)
 \end{aligned}
 \end{equation}
-
+%
 Summing over \(k\), we can pick out the differential form of Faraday's law
-
+%
 \begin{equation}
 0 = \PD{t}{\BB} + \spacegrad \cross \BE
 \end{equation}
-
+%
 as well as the integral form
-
+%
 \begin{equation}\label{eqn:stokesMaxwellApplication:520}
 \begin{aligned}
 0
@@ -578,12 +578,12 @@ as well as the integral form
 + \int \PD{t}{\BB} \cdot \ncap d\BA
 \end{aligned}
 \end{equation}
-
+%
 which is
 \begin{equation}
 0 = \ointctrclockwise \BE \cdot d\Br + \int \PD{t}{\BB} \cdot d\BA.
 \end{equation}
-
+%
 \section{Conclusion}
 
 In the treatment of these notes, the
@@ -594,54 +594,54 @@ using the bivector Stokes equation, and various spacetime integration volumes.
 \subsection{Summary of results}
 
 We started with the bivector form of Stokes law
-
+%
 \begin{equation}
 \iiint (\grad \wedge F) \cdot d^3\Bx = \oiintclockwise F \cdot d^2\Bx,
 \end{equation}
-
+%
 and the multivector Maxwell equation
-
+%
 \begin{equation}\label{eqn:stokesMax:summaryMaxwell}
 \grad F = J/\epsilon_0 c.
 \end{equation}
-
+%
 The trivector parts of this can be integrated directly.  This integral is always zero for all spacetime or spatial surfaces
-
+%
 \begin{equation}\label{eqn:stokesMaxwellApplication:540}
 \begin{aligned}
 \int \left(\grad \wedge F\right) \cdot d^3 \Bx &= 0
 \end{aligned}
 \end{equation}
-
+%
 Duality relations were used to put the vector parts of \eqnref{eqn:stokesMax:summaryMaxwell} into a form that Stokes can be applied to.  This gives us
-
+%
 \begin{equation}\label{eqn:stokesMaxwellApplication:560}
 \begin{aligned}
 \oiintctrclockwise F \cdot (d^2\Bx I) &= \int \frac{J}{\epsilon_0 c} \cdot (d^3\Bx I).
 \end{aligned}
 \end{equation}
-
+%
 Integration of the trivector parts
-
+%
 \begin{equation}
 \iiint (\grad \wedge F) \cdot d^3 \Bx = \oiintclockwise F \cdot d^2\Bx = 0,
 \end{equation}
-
+%
 produces a combined electric and magnetic field form of a Faraday's law and Gauss' magneto-statics law that does not look terribly familiar
-
+%
 \begin{equation}\label{eqn:stokesMax:summaryGaussMandFaraday}
 \oiintclockwise \BE \cdot d^2\Bx = - c \oiintclockwise \BB \cdot (d^2\Bx I),
 \end{equation}
-
+%
 but integration of this using a spatial volume produces the familiar Gauss's magneto-static law
-
+%
 \begin{equation}\label{eqn:stokesMaxwellApplication:580}
 \begin{aligned}
 \iint \BB \cdot d\BA &= 0 \\
 \spacegrad \cdot \BB  &= 0.
 \end{aligned}
 \end{equation}
-
+%
 Integration and summation of the same trivector parts in \eqnref{eqn:stokesMax:summaryGaussMandFaraday} over each of the possible three spacetime volumes gives us Faraday's law
 in its familiar forms
 \begin{equation}\label{eqn:stokesMaxwellApplication:600}
@@ -650,16 +650,16 @@ in its familiar forms
 \ointctrclockwise \BE \cdot d\Br + \int \PD{t}{\BB} \cdot d\BA &= 0.
 \end{aligned}
 \end{equation}
-
+%
 Now, the vector parts of Maxwell's multivector equation integrated over a spatial volume produces Gauss's law for electrostatics
-
+%
 \begin{equation}\label{eqn:stokesMaxwellApplication:620}
 \begin{aligned}
 \iint \BE \cdot d\BA &= \int \frac{\rho}{\epsilon_0} dV \\
 \spacegrad \cdot \BE &= \frac{\rho}{\epsilon_0}.
 \end{aligned}
 \end{equation}
-
+%
 Finally, integration of the same with summation over all spacetime volumes gives us the famous Maxwell-Ampere equation
 \begin{equation}\label{eqn:stokesMaxwellApplication:640}
 \begin{aligned}
@@ -667,7 +667,7 @@ Finally, integration of the same with summation over all spacetime volumes gives
 \ointctrclockwise \BB \cdot d\Br &= \mu_0 \left(\int \Bj \cdot d\BA + \epsilon_0 \int \PD{t}{\BE} \cdot d\BA \right).
 \end{aligned}
 \end{equation}
-
+%
 In the process of arriving at these results it appears that some of the use of Stokes equation was actually superfluous.  One of the first things
 that was done once the area elements were established was to undo the boundary integral writing things once more in terms of the partials over those boundaries.
 Doing all this with just the volume integrals would possibly have been simpler.  That said, as an exercise to validate the generalized Stokes equation

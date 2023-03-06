@@ -17,13 +17,13 @@ field energy and momentum.
 
 In \chapcite{PJpoynting} the energy density rate and Poynting divergence
 relationship was demonstrated using Maxwell's equation.  That was:
-
+%
 \begin{equation}\label{eqn:stressEnergyLorentz:20}
 \begin{aligned}
 \PD{t}{}\frac{\epsilon_0}{2} \left(\BE^2 + c^2 \BB^2\right) + \spacegrad \cdot \inv{\mu_0}(\BE \cross \BB) &= -\BE \cdot \Bj
 \end{aligned}
 \end{equation}
-
+%
 In terms of the field energy density \(U\), and Poynting vector \(\BP\), this is
 \begin{equation}\label{eqn:seLorentz:energyDensityPoyntingDefined}
 \begin{aligned}
@@ -32,16 +32,16 @@ U &= \frac{\epsilon_0}{2} \left(\BE^2 + c^2 \BB^2\right) \\
 \PD{t}{U} + \spacegrad \cdot \BP &= -\BE \cdot \Bj
 \end{aligned}
 \end{equation}
-
+%
 In \chapcite{PJemstresstensor} this was related to the
 energy momentum four vectors
-
+%
 \begin{equation}\label{eqn:seLorentz:lorentzForceT}
 \begin{aligned}
 T(a) &= \frac{\epsilon_0}{2} F a \tilde{F}
 \end{aligned}
 \end{equation}
-
+%
 as defined
 in \citep{doran2003gap}, but the big picture view
 of things was missing.
@@ -67,7 +67,7 @@ potentially of interest, as shown in \chapcite{PJFourierVacuum}, and
 \chapcite{PJplaneWave}
 that the energy density and Poynting vectors, and energy momentum four vector,
 were seen to be naturally expressible as Hermitian conjugate operations
-
+%
 \begin{equation}\label{eqn:stressEnergyLorentz:40}
 \begin{aligned}
 F^\dagger &= \gamma_0 \tilde{F} \gamma_0
@@ -84,7 +84,7 @@ U &= T(\gamma_0) \cdot \gamma_0 = \frac{\epsilon_0}{4} \left(F F^\dagger + F^\da
 \BP/c &= T(\gamma_0) \wedge \gamma_0 = \frac{\epsilon_0}{4} \left(F F^\dagger - F^\dagger F \right)
 \end{aligned}
 \end{equation}
-
+%
 It is conceivable that a generalization of Hermitian conjugation, where the spatial basis vectors are used instead of \(\gamma_0\), will
 provide a mapping and driving structure from the Four vector quantities and the somewhat scrambled seeming set
 of relationships observed in the split spatial and time domain.  That will also be explored here.
@@ -93,7 +93,7 @@ of relationships observed in the split spatial and time domain.  That will also 
 
 The spacetime divergence of the field energy momentum four vector \(T(\gamma_0)\) has been calculated previously.  Let us redo this
 calculation for the other components.
-
+%
 \begin{equation}\label{eqn:stressEnergyLorentz:100}
 \begin{aligned}
 \grad \cdot T(\gamma_\mu)
@@ -104,34 +104,34 @@ calculation for the other components.
 &= \inv{c} \gpgradezero{ J \gamma_\mu \tilde{F} } \\
 \end{aligned}
 \end{equation}
-
+%
 The ability to perform cyclic reordering of terms in a scalar product has been used above.  Application of one more
 reverse operation (which does not change a scalar), gives us
-
+%
 \begin{equation}\label{eqn:seLorentz:lorentzForceTdivergence}
 \begin{aligned}
 \grad \cdot T(\gamma_\mu) &= \inv{c} \gpgradezero{ F \gamma_\mu J }
 \end{aligned}
 \end{equation}
-
+%
 Let us expand the right hand size first.
-
+%
 \begin{equation}\label{eqn:stressEnergyLorentz:120}
 \begin{aligned}
 \inv{c} \gpgradezero{ F \gamma_\mu J } &= \inv{c} \gpgradezero{ (\BE + i c \BB) \gamma_\mu (c \rho \gamma_0 + \Bj \gamma_0) }
 \end{aligned}
 \end{equation}
-
+%
 The \(\mu = 0\) term looks the easiest, and for that one we have
-
+%
 \begin{equation}\label{eqn:stressEnergyLorentz:140}
 \begin{aligned}
 \inv{c} \gpgradezero{ (\BE + i c \BB) (c \rho - \Bj) }  = -\Bj \cdot \BE
 \end{aligned}
 \end{equation}
-
+%
 Now, for the other terms, say \(\mu = k\), we have
-
+%
 \begin{equation}\label{eqn:stressEnergyLorentz:160}
 \begin{aligned}
 \inv{c} \gpgradezero{ (\BE + i c \BB) (c \rho \sigma_k - \sigma_k \Bj ) }
@@ -142,16 +142,16 @@ Now, for the other terms, say \(\mu = k\), we have
 &= (\rho \BE + \Bj \cross \BB) \cdot \sigma_k
 \end{aligned}
 \end{equation}
-
+%
 Summarizing the two results we have
-
+%
 \begin{equation}\label{eqn:seLorentz:lorentzForcePair}
 \begin{aligned}
 \inv{c} \gpgradezero{ F \gamma_0 J } &= -\Bj \cdot \BE \\
 \inv{c} \gpgradezero{ F \gamma_k J } &= (\rho \BE + \Bj \cross \BB) \cdot \sigma_k
 \end{aligned}
 \end{equation}
-
+%
 The second of these is easily recognizable as components of the Lorentz force for an element of charge (density).  The first
 of these is actually the energy component of the four vector Lorentz force, so expanding that in terms of spacetime quantities
 is the next order of business.
@@ -165,13 +165,13 @@ The Lorentz force in covariant form is
 %\end{align}
 %
 %Or in vector/bivector form
-
+%
 \begin{equation}\label{eqn:seLorentz:lorentzForceGA}
 \begin{aligned}
 m \ddot{x} &= q F \cdot \dot{x}/c
 \end{aligned}
 \end{equation}
-
+%
 Two verifications of this are in order.  One is that we get the traditional vector form of the Lorentz force equation from
 this and the other is that we can get the traditional tensor form from this equation.
 
@@ -179,7 +179,7 @@ this and the other is that we can get the traditional tensor form from this equa
 \index{Lorentz force!tensor}
 
 Recovering the tensor form is probably the easier of the two operations.  We have
-
+%
 \begin{equation}\label{eqn:stressEnergyLorentz:180}
 \begin{aligned}
 m \ddot{x}_\mu \gamma^\mu
@@ -188,26 +188,26 @@ m \ddot{x}_\mu \gamma^\mu
 &= \frac{q}{2} F_{\alpha\beta} \dot{x}^\beta \gamma^{\alpha} - \frac{q}{2} F_{\alpha\beta} \dot{x}^\alpha \gamma^{\beta} \\
 \end{aligned}
 \end{equation}
-
+%
 Dotting with \(\gamma_\mu\) the right hand side is
-
+%
 \begin{equation}\label{eqn:stressEnergyLorentz:200}
 \begin{aligned}
 \frac{q}{2} F_{\mu\beta} \dot{x}^\beta - \frac{q}{2} F_{\alpha\mu} \dot{x}^\alpha
 &= {q} F_{\mu\alpha} \dot{x}^\alpha
 \end{aligned}
 \end{equation}
-
+%
 Which recovers the tensor form of the equation
 \begin{equation}\label{eqn:seLorentz:lorentzForceTensor}
 \begin{aligned}
 m \ddot{x}_\mu &= {q} F_{\mu\alpha} \dot{x}^\alpha
 \end{aligned}
 \end{equation}
-
+%
 \subsection{Lorentz force components in vector form}
 \index{Lorentz force!vector form}
-
+%
 \begin{equation}\label{eqn:stressEnergyLorentz:220}
 \begin{aligned}
 m \gamma \frac{d}{dt} \gamma \left(c + \sigma_k \frac{dx^k}{dt}\right) \gamma_0
@@ -223,7 +223,7 @@ m \gamma \frac{d}{dt} \gamma \left(c + \sigma_k \frac{dx^k}{dt}\right) \gamma_0
 (\BE + i c\BB) \\
 \end{aligned}
 \end{equation}
-
+%
 Right multiplication by \(\gamma_0/\gamma\) we have
 \begin{equation}\label{eqn:stressEnergyLorentz:240}
 \begin{aligned}
@@ -238,28 +238,28 @@ m \frac{d}{dt} \gamma \left(c + \Bv \right)
 \right) \\
 \end{aligned}
 \end{equation}
-
+%
 After a last bit of reduction this is
 \begin{equation}\label{eqn:stressEnergyLorentz:260}
 \begin{aligned}
 m \frac{d}{dt} \gamma \left(c + \Bv \right) &= q (\BE + \Bv \cross \BB) + q \BE \cdot \Bv/c
 \end{aligned}
 \end{equation}
-
+%
 In terms of four vector momentum this is
 \begin{equation}\label{eqn:seLorentz:lorentzForceVec}
 \begin{aligned}
 \dot{p} = q ( \BE \cdot \Bv/c + \BE + \Bv \cross \BB ) \gamma_0
 \end{aligned}
 \end{equation}
-
+%
 \subsection{Relation to the energy momentum tensor}
 \index{Lorentz force!energy momentum tensor}
 
 It appears that to relate the energy momentum tensor to the Lorentz force we have
 to work with the upper index quantities rather than the lower index stress tensor vectors.  Doing so
 our four vector force per unit volume is
-
+%
 \begin{equation}\label{eqn:stressEnergyLorentz:280}
 \begin{aligned}
 \PD{V}{\dot{p}}
@@ -269,7 +269,7 @@ our four vector force per unit volume is
 &= - (\grad \cdot T(\gamma^\mu)) \gamma_\mu
 \end{aligned}
 \end{equation}
-
+%
 The term \(\gpgradezero{ F \gamma^\mu J } \gamma_\mu \) appears to be expressed simply has \(F \cdot J\) in
 \citep{doran2003gap}.  Understanding that simple statement is now possible now that an exploration
 of some of the underlying ideas has been made.  In retrospect having seen the bivector product form of the Lorentz force equation, it should have been
@@ -287,18 +287,18 @@ done previously and is not particularly enlightening.  Let us work it out here i
 \subsection{In terms of electric and magnetic field components}
 
 Here we want to expand
-
+%
 \begin{equation}\label{eqn:stressEnergyLorentz:300}
 \begin{aligned}
 T(\gamma^\mu) = \frac{-\epsilon_0}{2} (\BE + i c \BB) \gamma^\mu (\BE + i c \BB)
 \end{aligned}
 \end{equation}
-
+%
 It will be convenient here to temporarily work with \(\epsilon_0 = c = 1\), and put them back in afterward.
 %T(\gamma^\mu) = \frac{-1}{2} (\BE + i \BB) \gamma^\mu (\BE + i \BB)
 
 \subsubsection{First row}
-
+%
 First expanding \(T(\gamma^0)\) we have
 \begin{equation}\label{eqn:stressEnergyLorentz:320}
 \begin{aligned}
@@ -308,32 +308,32 @@ T(\gamma^0)
 &= \frac{1}{2} (\BE^2 + \BB^2) \gamma^0 + i ( \BB \wedge \BE ) \gamma^0 \\
 \end{aligned}
 \end{equation}
-
+%
 Using the wedge product dual \(\Ba \wedge \Bb = i (\Ba \cross \Bb)\), and putting back in the units, we have our
 first stress energy four vector,
-
+%
 \begin{equation}\label{eqn:stressEnergyLorentz:340}
 \begin{aligned}
 T(\gamma^0) &= \lr{ \frac{\epsilon_0}{2} \lr{\BE^2 + c^2 \BB^2} + \inv{\mu_0 c} (\BE \cross \BB) } \gamma^0
 \end{aligned}
 \end{equation}
-
+%
 In particular the energy density and the components of the Poynting vector can be picked off by dotting with each of the \(\gamma^\mu\) vectors.  That is
-
+%
 \begin{equation}\label{eqn:stressEnergyLorentz:360}
 \begin{aligned}
 U                    &= T(\gamma^0) \cdot \gamma^0 \\
 \BP/c \cdot \sigma_k &= T(\gamma^0) \cdot \gamma^k
 \end{aligned}
 \end{equation}
-
+%
 \subsubsection{First column}
 
 We have Poynting vector terms in the \(T^{0k}\) elements of the matrix.  Let us quickly verify that we have them
 in the \(T^{k0}\) positions too.
 
 To do so, again with \(c = \epsilon_0 = 1\) temporarily this is a computation of
-
+%
 \begin{equation}\label{eqn:stressEnergyLorentz:380}
 \begin{aligned}
 T(\gamma^k) \cdot \gamma^0
@@ -345,19 +345,19 @@ T(\gamma^k) \cdot \gamma^0
 &= \frac{1}{4} \gpgradezero{\sigma_k (-\BE^2 -\BB^2 +2 (\BE \cross \BB)) - \sigma_k (-\BE^2 -\BB^2 - 2(\BE \cross \BB)) } \\
 \end{aligned}
 \end{equation}
-
+%
 Adding back in the units we have
-
+%
 \begin{equation}\label{eqn:stressEnergyLorentz:400}
 \begin{aligned}
 T(\gamma^k) \cdot \gamma^0 &= \epsilon_0 c (\BE \cross \BB) \cdot \sigma_k = \inv{c}\BP \cdot \sigma_k
 \end{aligned}
 \end{equation}
-
+%
 As expected, these are the components of the Poynting vector (scaled by \(1/c\) for units of energy density).
 
 \subsubsection{Diagonal and remaining terms}
-
+%
 \begin{equation}\label{eqn:stressEnergyLorentz:420}
 \begin{aligned}
 T(\gamma^a) \cdot \gamma^b
@@ -368,13 +368,13 @@ T(\gamma^a) \cdot \gamma^b
 &= \frac{1}{2} \gpgradezero{\sigma_a (-\BE + i \BB) \sigma_b (\BE + i\BB) } \\
 \end{aligned}
 \end{equation}
-
+%
 From this point is there any particularly good or clever way to do the remaining reduction?  Doing it with
 coordinates looks like it would be easy, but also messy.  A decomposition of \(\BE\) and \(\BB\) that are parallel
 and perpendicular to the spatial basis vectors also looks feasible.
 
 Let us try the dumb way first
-
+%
 \begin{equation}\label{eqn:stressEnergyLorentz:440}
 \begin{aligned}
 T(\gamma^a) \cdot \gamma^b
@@ -384,10 +384,10 @@ T(\gamma^a) \cdot \gamma^b
 - \inv{2} (E^k E^m + B^k B^m) \gpgradezero{ \sigma_a \sigma_k \sigma_b \sigma_m } \\
 \end{aligned}
 \end{equation}
-
+%
 Reducing the scalar operations is going to be much different for the \(a = b\), and \(a \ne b\) cases.  For the diagonal case
 we have
-
+%
 \begin{equation}\label{eqn:stressEnergyLorentz:460}
 \begin{aligned}
 T(\gamma^a) \cdot \gamma^a
@@ -401,7 +401,7 @@ T(\gamma^a) \cdot \gamma^a
 - \inv{2} \sum_m (E^a E^m + B^a B^m) \gpgradezero{ \sigma_a \sigma_m } \\
 \end{aligned}
 \end{equation}
-
+%
 Inserting the units again we have
 \begin{equation}\label{eqn:stressEnergyLorentz:480}
 \begin{aligned}
@@ -410,15 +410,15 @@ T(\gamma^a) \cdot \gamma^a
 \frac{\epsilon_0}{2} \left( \sum_{k \ne a} \left( (E^k)^2 + c^2 (B^k)^2 \right) - \left( (E^a)^2  + c^2 (B^a)^2  \right) \right)
 \end{aligned}
 \end{equation}
-
+%
 Or, adding and subtracting, we have the diagonal in terms of energy density (minus a fudge)
-
+%
 \begin{equation}\label{eqn:stressEnergyLorentz:500}
 \begin{aligned}
 T(\gamma^a) \cdot \gamma^a &= U - \epsilon_0 \left( (E^a)^2  + c^2 (B^a)^2  \right)
 \end{aligned}
 \end{equation}
-
+%
 Now, for the off diagonal terms.  For \(a \ne b\) this is
 \begin{equation}\label{eqn:stressEnergyLorentz:520}
 \begin{aligned}
@@ -432,23 +432,23 @@ T(\gamma^a) \cdot \gamma^b
 - \inv{2} \sum_{m, k \ne a,b}(E^k E^m + B^k B^m) \gpgradezero{ \sigma_a \sigma_k \sigma_b \sigma_m } \\
 \end{aligned}
 \end{equation}
-
+%
 The first two scalar filters that include \(i\) will be zero, and we have deltas
 \(\gpgradezero{ \sigma_b \sigma_m } = \delta_{bm}\) in the next two.
 The remaining two terms have only vector and bivector terms, so we have zero scalar parts.
 That leaves (restoring units)
-
+%
 \begin{equation}\label{eqn:stressEnergyLorentz:540}
 \begin{aligned}
 T(\gamma^a) \cdot \gamma^b
 &= - \frac{\epsilon_0}{2} \left( E^a E^b + E^b E^a + c^2 (B^a B^b + B^b B^a) \right)
 \end{aligned}
 \end{equation}
-
+%
 \subsection{Summarizing}
 
 Collecting all the results, with \(T^{\mu\nu} = T(\gamma^\mu) \cdot \gamma^\nu\), we have
-
+%
 \begin{equation}\label{eqn:stressEnergyLorentz:560}
 \begin{aligned}
 T^{00} &= \frac{\epsilon_0}{2} \left(\BE^2 + c^2 \BB^2\right) \\
@@ -457,12 +457,12 @@ T^{k0} = T^{0k} &= \inv{c} \left( \inv{\mu_0}(\BE \cross \BB) \right) \cdot \sig
 T^{ab} = T^{ba} &= - \frac{\epsilon_0}{2} \left( E^a E^b + E^b E^a + c^2 (B^a B^b + B^b B^a) \right)
 \end{aligned}
 \end{equation}
-
+%
 \subsection{Assembling a four vector}
 
 Let us see what one of the \(T^{a\mu} \gamma_\mu\) rows of the tensor looks like in four vector form.  Let \(f \ne g \ne h\)
 represent an even permutation of the integers \(1,2,3\).  Then we have
-
+%
 \begin{equation}\label{eqn:stressEnergyLorentz:580}
 \begin{aligned}
 T^f
@@ -474,15 +474,15 @@ T^f
 &-\frac{\epsilon_0}{2} \left( E^f E^h + E^h E^f + c^2 (B^f B^h + B^h B^f) \right) \gamma_h \\
 \end{aligned}
 \end{equation}
-
+%
 It is pretty amazing that the divergence of this produces the \(f\) component of the Lorentz force (density)
-
+%
 \begin{equation}\label{eqn:stressEnergyLorentz:600}
 \begin{aligned}
 \partial_\mu T^{f\mu} = (\rho \BE + \Bj \cross \BB) \cdot \sigma_f
 \end{aligned}
 \end{equation}
-
+%
 Demonstrating this directly without having STA as an available tool would be quite tedious, and looking at this
 expression inspires no particular attempt to try!
 
@@ -499,26 +499,26 @@ expression inspires no particular attempt to try!
 
 This also suggests a relativistic generalization of conjugation, since the time basis vector should perhaps not have
 a distinguishing role.  Something like this:
-
+%
 \begin{equation}\label{eqn:stressEnergyLorentz:620}
 \begin{aligned}
 F^{\dagger_\mu} &= \gamma_\mu \tilde{F} \gamma_\mu
 \end{aligned}
 \end{equation}
-
+%
 Or perhaps:
 \begin{equation}\label{eqn:stressEnergyLorentz:640}
 \begin{aligned}
 F^{\dagger_\mu} &= \gamma_\mu \tilde{F} \gamma^\mu
 \end{aligned}
 \end{equation}
-
+%
 may make sense for consideration of the other components of the general energy momentum tensor, which had roughly the form:
-
+%
 \begin{equation}\label{eqn:stressEnergyLorentz:660}
 \begin{aligned}
 T^{\mu\nu} \propto T(\gamma_\mu) \cdot \gamma^\nu
 \end{aligned}
 \end{equation}
-
+%
 (with some probable adjustments to index positions).  Think this through later.

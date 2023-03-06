@@ -25,17 +25,17 @@ of \(c\), and I will add that back in here, since I am not comfortable enough
 without it explicitly for now.
 
 With:
-
+%
 \begin{equation}\label{eqn:velocityTx:20}
 \begin{aligned}
 \Bv/c &= \tanh\left(\alpha\right)\vcap \\
 R &= \exp\left(\alpha \vcap/2\right)
 \end{aligned}
 \end{equation}
-
+%
 We want to expansion this Lorentz boost exponential (see details section) and apply it to the rest frame basis vector.  Writing
 \(C = \cosh\left(\alpha/2\right)\), and \(S = \sinh\left(\alpha/2\right)\), we have:
-
+%
 \begin{equation}\label{eqn:velocityTx:40}
 \begin{aligned}
 v
@@ -45,9 +45,9 @@ v
 &= c \left( C^2 \gamma_0 + SC \vcap \gamma_0 -CS \gamma_0\vcap - S^2 \vcap \gamma_0 \vcap \right) \\
 \end{aligned}
 \end{equation}
-
+%
 Now, here things can start to get confusing since \(\vcap\) is a spatial quantity with vector-like spacetime basis bivectors \(\sigma_i = \gamma_i \gamma_0\).  Factoring out the \(\gamma_0\) term, utilizing the fact that \(\gamma_0\) and \(\sigma_i\) anticommute (see below).
-
+%
 \begin{equation}\label{eqn:velocityTx:60}
 \begin{aligned}
 v
@@ -64,14 +64,14 @@ v
 &= \frac{dx}{d\tau}
 \end{aligned}
 \end{equation}
-
+%
 So, we get the end result that demonstrates that a Lorentz boost applied to the rest event vector \(x = x^0 \gamma_0 = c t \gamma_0\) directly produces the four velocity for the motion from the new viewpoint.  This makes some intuitive sense, but
 I do not feel this is necessarily obvious without demonstration.
 
 This also explains how the text is able to use the wedge and dot product ratios with the \(\gamma_0\) basis vector
 to produce the relative spatial velocity.  If one introduces a rest frame proper velocity of
 \(w = \frac{d}{dt}\left(ct \gamma_0\right) = c \gamma_0\), then one has:
-
+%
 \begin{equation}\label{eqn:velocityTx:80}
 \begin{aligned}
 v \cdot w
@@ -79,7 +79,7 @@ v \cdot w
 &= c^2 \gamma
 \end{aligned}
 \end{equation}
-
+%
 \begin{equation}\label{eqn:velocityTx:100}
 \begin{aligned}
 v \wedge w
@@ -90,13 +90,13 @@ v \wedge w
 &= c \gamma \sum \frac{d x^{i}}{dt} \sigma_{i} \\
 \end{aligned}
 \end{equation}
-
+%
 Combining these one has the spatial observer dependent relative velocity:
-
+%
 \begin{equation}
 \frac{v \wedge w}{v \cdot w} = \inv{c} \sum \frac{d x^{i}}{dt} \sigma_{i} = \frac{\Bv}{c}
 \end{equation}
-
+%
 \subsection{Invariance of relative velocity?}
 
 What is not clear to me is whether this can be used to determine the relative velocity between two particles in the general case, when one of them is not a rest frame velocity (time progression only at a fixed point in space.)
@@ -106,7 +106,7 @@ to imply this is the case, so perhaps it is obvious to them only and not me;)
 This can be verified relatively easily for the extreme case, where one boosts both the \(w\), and \(v\) velocities to measure \(v\) in its rest frame.
 
 Expressed mathematically this is:
-
+%
 \begin{equation}\label{eqn:velocityTx:120}
 \begin{aligned}
 w &= c \gamma_0 \\
@@ -115,20 +115,20 @@ v' &= R^\dagger v R = R^\dagger R c \gamma_0 R^\dagger R = c \gamma_0 \\
 w' &= R^\dagger w R \\
 \end{aligned}
 \end{equation}
-
+%
 Now, this last expression for \(w'\) can be expanded brute force as was done initially to calculate \(v\) (and I in
 fact did that initially without thinking).  The end result matches what should have been the intuitive expectation, with the velocity components all negated in a conjugate like fashion:
-
+%
 \begin{equation*}
 w' = \gamma\left( c\gamma_0 - \sum v^i \gamma_i \right)
 \end{equation*}
-
+%
 With this result we have:
-
+%
 \begin{equation*}
 v' \cdot w' = c \gamma_0 \cdot \gamma\left( c\gamma_0 - \sum v^i \gamma_i \right) = \gamma c^2
 \end{equation*}
-
+%
 \begin{equation}\label{eqn:velocityTx:140}
 \begin{aligned}
 v' \wedge w'
@@ -137,13 +137,13 @@ v' \wedge w'
 &= c \gamma \sum v^i \sigma_i \\
 \end{aligned}
 \end{equation}
-
+%
 Dividing the two we have the following relative velocity between the two proper velocities:
-
+%
 \begin{equation*}
 \frac{v' \wedge w'}{v' \cdot w'} = \inv{c} \sum v^i \sigma_i = \Bv/c.
 \end{equation*}
-
+%
 Lo and behold, this is the same as when the first event worldline was in its rest frame, so we have the same
 relative velocity regardless of which of the two are observed at rest.  The remaining obvious question is
 how to show that this is a general condition, assuming that it is.
@@ -156,7 +156,7 @@ two is considered at rest.
 Mathematically, I would express this statement by saying that if one has
 a Lorentz boost that takes \(v' = T v T^\dagger\) to its rest frame, then application of this to both proper velocities leaves both the wedge and dot product
 parts of this ratio unchanged:
-
+%
 \begin{equation}\label{eqn:velocityTx:160}
 \begin{aligned}
 v \cdot w
@@ -174,7 +174,7 @@ v \cdot w
 &= v' \cdot w'
 \end{aligned}
 \end{equation}
-
+%
 \begin{equation}\label{eqn:velocityTx:180}
 \begin{aligned}
 v \wedge w
@@ -191,7 +191,7 @@ v \wedge w
 &= T^\dagger \left(v' \wedge w'\right) T
 \end{aligned}
 \end{equation}
-
+%
 FIXME: can not those last \(T\) factors be removed somehow?
 
 \section{Appendix. Omitted details from above}
@@ -202,7 +202,7 @@ Understanding the vector exponential is a prerequisite above.  This is defined
 and interpreted by series expansion as with matrix exponentials.
 Expanding
 in series the exponential of a vector \(\Bx = x\xcap\), we have:
-
+%
 \begin{equation}\label{eqn:velocityTx:200}
 \begin{aligned}
 \exp\left(\Bx\right)
@@ -211,17 +211,17 @@ in series the exponential of a vector \(\Bx = x\xcap\), we have:
 &= \cosh\left(x\right) + \xcap \sinh\left(x\right)
 \end{aligned}
 \end{equation}
-
+%
 Notationally this can also be written:
-
+%
 \begin{equation*}
 \exp\left(\Bx\right) = \cosh\left(\Bx\right) + \sinh\left(\Bx\right)
 \end{equation*}
-
+%
 But doing so will not really help.
 
 \subsection{\texorpdfstring{\(\Bv\)}{v} anticommutes with \texorpdfstring{\(\gamma_0\)}{gamma 0}}
-
+%
 \begin{equation}\label{eqn:velocityTx:220}
 \begin{aligned}
 \Bv \gamma_0

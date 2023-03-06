@@ -23,27 +23,27 @@ in other reading.
 The energy momentum ``tensor'', really a four vector, is defined
 in \citep{doran2003gap}
 as
-
+%
 \begin{equation}\label{eqn:enMTensor:20}
 \begin{aligned}
 T(a) &=
 \frac{\epsilon_0}{2} F a \tilde{F} = -\frac{\epsilon_0}{2} F a {F}
 \end{aligned}
 \end{equation}
-
+%
 We have seen that the divergence of the \(T(\gamma^\mu)\) vectors generate
 the Lorentz force relations.
 
 Let us expand this with respect to index lower basis vectors for use in the
 divergence calculation.
-
+%
 \begin{equation}\label{eqn:enMTensor:40}
 \begin{aligned}
 T(\gamma^\mu) &=
 \lr{ T(\gamma^\mu) \cdot \gamma^\nu } \gamma_\nu
 \end{aligned}
 \end{equation}
-
+%
 So we define
 \begin{equation}\label{eqn:enMTensor:60}
 \begin{aligned}
@@ -51,21 +51,21 @@ T^{\mu \nu}
 &= T(\gamma^\mu) \cdot \gamma^\nu
 \end{aligned}
 \end{equation}
-
+%
 and can write these four vectors in tensor form as
 \begin{equation}\label{eqn:enMTensor:80}
 \begin{aligned}
 T(\gamma^\mu) &= T^{\mu \nu} \gamma_\nu
 \end{aligned}
 \end{equation}
-
+%
 \subsection{Expanding out the tensor}
 
 An expansion of \(T^{\mu\nu}\) was done in \chapcite{PJemstresstensor}, but looking
 back that seems a peculiar way, using the four vector potential.
 
 Let us try again in terms of \(F^{\mu\nu}\) instead.  Our field is
-
+%
 \begin{equation}\label{eqn:enMTensor:100}
 \begin{aligned}
 F
@@ -74,7 +74,7 @@ F
 %&= \inv{2} F_{\mu\nu} \gamma^{\mu} \wedge \gamma^\nu
 \end{aligned}
 \end{equation}
-
+%
 So our tensor components are
 \begin{equation}\label{eqn:enMTensor:120}
 \begin{aligned}
@@ -84,7 +84,7 @@ T^{\mu\nu}
 \gpgradezero{ (\gamma_\lambda \wedge \gamma_\sigma) \gamma^\mu (\gamma_\alpha \wedge \gamma_\beta) \gamma^\nu } \\
 \end{aligned}
 \end{equation}
-
+%
 Or
 \begin{equation}\label{eqn:enMTensor:140}
 \begin{aligned}
@@ -102,7 +102,7 @@ F^{\lambda\sigma} F^{\alpha\beta}
 \gpgradezero{ (\gamma_\lambda \wedge \gamma_\sigma \wedge \gamma^\mu) (\gamma_\alpha \wedge \gamma_\beta \wedge \gamma^\nu) } \\
 \end{aligned}
 \end{equation}
-
+%
 Expanding only the first term to start with
 \begin{equation}\label{eqn:enMTensor:160}
 \begin{aligned}
@@ -144,7 +144,7 @@ F^{\mu\sigma} F^{\alpha\nu} \gamma_\sigma \cdot \gamma^\beta )
 &= 4 F^{\alpha\mu} {F_{\alpha}}^{\nu} \\
 \end{aligned}
 \end{equation}
-
+%
 For the second term after a shuffle of indices we have
 \begin{equation}\label{eqn:enMTensor:180}
 \begin{aligned}
@@ -152,7 +152,7 @@ F^{\lambda\sigma} F_{\alpha\beta}
 \eta^{\mu\mu'} \gpgradezero{ (\gamma_\lambda \wedge \gamma_\sigma \wedge \gamma_\mu) (\gamma^\alpha \wedge \gamma^\beta \wedge \gamma^\nu) } \\
 \end{aligned}
 \end{equation}
-
+%
 This dot product is reducible with the identity
 \begin{equation}\label{eqn:enMTensor:200}
 \begin{aligned}
@@ -160,9 +160,9 @@ This dot product is reducible with the identity
 (((a \wedge b \wedge c) \cdot d) \cdot e) \cdot f
 \end{aligned}
 \end{equation}
-
+%
 leaving a completely antisymmetized sum
-
+%
 \begin{equation}\label{eqn:enMTensor:220}
 \begin{aligned}
 &
@@ -194,7 +194,7 @@ F^{\lambda\sigma} F_{\alpha\beta}
  \\
 \end{aligned}
 \end{equation}
-
+%
 Combining these we have
 \begin{equation}\label{eqn:enMTensor:240}
 \begin{aligned}
@@ -213,21 +213,21 @@ T^{\mu\nu}
 \right) \\
 \end{aligned}
 \end{equation}
-
-
+%
+%
 If by some miracle all the index manipulation worked out, we have
 \begin{equation}\label{eqn:stressEnTen:miracle}
 \begin{aligned}
 T^{\mu\nu} &= {\epsilon_0} \left( F^{\alpha\mu} {F^{\nu}}_{\alpha} + \inv{4} F^{\alpha\beta} F_{\alpha\beta} \eta^{\mu\nu} \right)
 \end{aligned}
 \end{equation}
-
+%
 \subsubsection{Justifying some of the steps}
 
 For justification of some of the
 index manipulations of the \(F\) tensor components it is
 helpful to think back to the definitions in terms of four vector potentials
-
+%
 \begin{equation}\label{eqn:enMTensor:260}
 \begin{aligned}
 F &= \grad \wedge A \\
@@ -241,7 +241,7 @@ F &= \grad \wedge A \\
 &= \inv{2}(\partial^\mu A_\nu -\partial_\nu A^\mu ) \gamma_\mu \wedge \gamma^\nu
 \end{aligned}
 \end{equation}
-
+%
 So with the shorthand
 \begin{equation}\label{eqn:enMTensor:280}
 \begin{aligned}
@@ -251,7 +251,7 @@ F_{\mu\nu} &= \partial_\mu A_\nu -\partial_\nu A_\mu \\
 {F^{\mu}}_{\nu} &= \partial^\mu A_\nu -\partial_\nu A^\mu
 \end{aligned}
 \end{equation}
-
+%
 We have
 \begin{equation}\label{eqn:enMTensor:300}
 \begin{aligned}
@@ -262,26 +262,26 @@ F
 &= \inv{2}{F^\mu}_\nu \gamma_\mu \wedge \gamma^\nu
 \end{aligned}
 \end{equation}
-
+%
 In particular, and perhaps not obvious without the definitions handy, the following was used above
-
+%
 \begin{equation}\label{eqn:enMTensor:320}
 \begin{aligned}
 {F^{\mu}}_{\nu} &= -{F_{\nu}}^{\mu}
 \end{aligned}
 \end{equation}
-
+%
 \subsection{The divergence}
 
 What is our divergence in tensor form?  This would be
-
+%
 \begin{equation}\label{eqn:enMTensor:340}
 \begin{aligned}
 \grad \cdot T(\gamma^\mu)
 &= (\gamma^\alpha \partial_\alpha ) \cdot (T^{\mu\nu} \gamma_\nu) \\
 \end{aligned}
 \end{equation}
-
+%
 So we have
 \begin{equation}\label{eqn:enMTensor:360}
 \begin{aligned}
@@ -289,9 +289,9 @@ So we have
 &= \partial_\nu T^{\mu\nu}
 \end{aligned}
 \end{equation}
-
+%
 Ignoring the \(\epsilon_0\) factor for now, chain rule gives us
-
+%
 \begin{equation}\label{eqn:enMTensor:380}
 \begin{aligned}
 (\partial_\nu &F^{\alpha\mu}) {F^{\nu}}_{\alpha} +
@@ -304,7 +304,7 @@ F^{\alpha\mu} (\partial_\nu {F^{\nu}}_{\alpha}) +
 \inv{2} (\partial_\nu F^{\alpha\beta}) F_{\alpha\beta} \eta^{\mu\nu}
 \end{aligned}
 \end{equation}
-
+%
 Only this center term is recognizable in terms of current since we
 have
 \begin{equation}\label{eqn:enMTensor:400}
@@ -312,7 +312,7 @@ have
 \grad \cdot F &= J/\epsilon_0 c
 \end{aligned}
 \end{equation}
-
+%
 Where the LHS is
 \begin{equation}\label{eqn:enMTensor:420}
 \begin{aligned}
@@ -322,9 +322,9 @@ Where the LHS is
 &= \partial_\mu F^{\mu\nu} \gamma_\nu
 \end{aligned}
 \end{equation}
-
+%
 So we have
-
+%
 \begin{equation}\label{eqn:enMTensor:440}
 \begin{aligned}
 \partial_\mu F^{\mu\nu}
@@ -333,7 +333,7 @@ So we have
 &= J^\nu/\epsilon_0 c
 \end{aligned}
 \end{equation}
-
+%
 Or
 \begin{equation}\label{eqn:enMTensor:460}
 \begin{aligned}
@@ -341,9 +341,9 @@ Or
 \end{aligned}
 \end{equation}
 %\partial_\nu F^{\nu\alpha} &= J^\alpha/\epsilon_0 c
-
+%
 So we have
-
+%
 \begin{equation}\label{eqn:enMTensor:480}
 \begin{aligned}
 \grad \cdot T(\gamma^\mu)
@@ -355,9 +355,9 @@ So we have
 {F_{\alpha}}^{\mu} J^\alpha/c
 \end{aligned}
 \end{equation}
-
+%
 So, to get the expected result the remaining two derivative terms must somehow cancel.  How to reduce these?  Let us look at twice that
-
+%
 \begin{equation}\label{eqn:enMTensor:500}
 \begin{aligned}
 2 (\partial_\nu &F^{\alpha\mu}) {F^{\nu}}_{\alpha} + (\partial_\nu F^{\alpha\beta}) F_{\alpha\beta} \eta^{\mu\nu} \\
@@ -371,9 +371,9 @@ So, to get the expected result the remaining two derivative terms must somehow c
 (\partial^\alpha F^{\beta\mu} +\partial^\beta F^{\mu\alpha} + \partial^\mu F^{\alpha\beta}) F_{\alpha\beta} \\
 \end{aligned}
 \end{equation}
-
+%
 Ah, there is the trivector term of Maxwell's equation hiding in there.
-
+%
 \begin{equation}\label{eqn:enMTensor:520}
 \begin{aligned}
 0
@@ -389,17 +389,17 @@ Ah, there is the trivector term of Maxwell's equation hiding in there.
 (\gamma_\mu \wedge \gamma_\alpha \wedge \gamma_\beta)
 \end{aligned}
 \end{equation}
-
+%
 Since this is zero, each component of this trivector must separately equal zero, and we have
-
+%
 \begin{equation}\label{eqn:enMTensor:540}
 \begin{aligned}
 \partial^\mu F^{\alpha\beta} +\partial^\alpha F^{\beta\mu} +\partial^\beta F^{\mu\alpha} = 0
 \end{aligned}
 \end{equation}
-
+%
 So, where \(T^{\mu\nu}\) is defined by \eqnref{eqn:stressEnTen:miracle}, the final result is
-
+%
 \begin{equation}\label{eqn:stressEnTen:covariantTensor}
 \begin{aligned}
 \partial_\nu T^{\mu\nu} &= F^{\alpha\mu} J_\alpha/c

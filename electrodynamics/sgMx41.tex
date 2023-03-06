@@ -28,52 +28,52 @@ This is illustrated for two wires in \cref{fig:2wires}.
 
 Consider first just the magnetic field for one wire, temporarily putting
 the origin at the point of the current.
-
+%
 \begin{equation*}
 \int \BB \cdot d\Bl = \mu_0 I
 \end{equation*}
-
+%
 At a point \(\Br\) from the local origin the tangent vector is obtained by
 rotation of the unit vector:
-
+%
 \begin{equation*}
 \ycap \exp{\left(\xcap\ycap \log{\left(\frac{\Br}{\norm{\Br}}\right)}\right)}
 = \ycap {\left(\frac{\Br}{\norm{\Br}}\right)}^{\xcap\ycap}
 \end{equation*}
-
+%
 % FIXME: this rotation above doesn't make sense to me.  What the hell was I doing?
 Thus the magnetic field at the point \(\Br\) due to this particular current is:
-
+%
 \begin{equation*}
 \BB(\Br)
 = \frac{\mu_0 I \ycap}{2\pi \norm{\Br}} {\left(\frac{\Br}{\norm{\Br}}\right)}^{\xcap\ycap}
 \end{equation*}
-
+%
 Considering additional currents with the wire centers at points \(P_k\), and measurement of the field at point \(\BR\) we have for each of those:
-
+%
 \begin{equation*}
 \Br = \BR - \BP
 \end{equation*}
-
+%
 Thus the total field at point \(\BR\) is:
-
+%
 \begin{equation}
 \BB(\BR) = \frac{\mu_0 \ycap}{2\pi} \sum_k \frac{I_k}{\norm{\BR - \BP_k}} {\left(\frac{\BR - \BP_k}{\norm{\BR - \BP_k}}\right)}^{\xcap\ycap}
 \end{equation}
-
+%
 \subsection{Original problem}
 
 For the problem as stated, put the origin between the two points with those two points on the x-axis.
-
+%
 \begin{equation}\label{eqn:sgMx41:20}
 \begin{aligned}
 \BP_1 &= - \xcap d/2 \\
 \BP_2 &= \xcap d/2
 \end{aligned}
 \end{equation}
-
+%
 Here \(\BR\) = 0, so \(\Br_1 = \BR - \BP_1 = \xcap d/2 \) and \(\Br_2 = - \xcap d/2\).  With \(\xcap\ycap = i\), this is:
-
+%
 \begin{equation}\label{eqn:sgMx41:40}
 \begin{aligned}
 \BB(0)
@@ -82,9 +82,9 @@ Here \(\BR\) = 0, so \(\Br_1 = \BR - \BP_1 = \xcap d/2 \) and \(\Br_2 = - \xcap 
 &= \frac{-3 I \mu_0 \ycap}{\pi d}
 \end{aligned}
 \end{equation}
-
+%
 Here unit vectors exponentials were evaluated with the equivalent complex number manipulations:
-
+%
 \begin{equation}\label{eqn:sgMx41:60}
 \begin{aligned}
 (-1)^i &= x \\
@@ -94,7 +94,7 @@ i \pi &= \log{x} \\
 x &= -1
 \end{aligned}
 \end{equation}
-
+%
 \begin{equation}\label{eqn:sgMx41:80}
 \begin{aligned}
 (1)^i &= x \\

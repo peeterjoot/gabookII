@@ -16,7 +16,7 @@ Expand on treatment of \citep{doran2003gap}.
 
 The idea behind this derivation, is to express the vector part of the proper force in covariant form, and then
 do the same for the energy change part of the proper momentum.  That first part is:
-
+%
 \begin{equation}\label{eqn:gafpLorentz:20}
 \begin{aligned}
 \frac{dp}{d\tau} \wedge \gamma_0
@@ -25,9 +25,9 @@ do the same for the energy change part of the proper momentum.  That first part 
 &= \frac{dt}{d\tau} q \left( \BE + \Bv \cross \BB \right)
 \end{aligned}
 \end{equation}
-
+%
 Now, the spacetime split of velocity is done in the normal fashion:
-
+%
 \begin{equation}\label{eqn:gafpLorentz:40}
 \begin{aligned}
 x &= c t \gamma_0 + \sum x^i \gamma_i \\
@@ -39,17 +39,17 @@ v \wedge \gamma_0
 &= (v \cdot \gamma_0) \Bv/c.
 \end{aligned}
 \end{equation}
-
+%
 Writing \(\dot{p} = dp/d\tau\), substitute the gamma factor into the force equation:
-
+%
 \begin{equation*}
 \dot{p} \wedge \gamma_0 = ( v/c \cdot \gamma_0 ) q \left( \BE + \Bv \cross \BB \right)
 \end{equation*}
-
+%
 Now, GAFP goes on to show that the \(\gamma \BE\) term can be reduced to the form \((\BE \cdot v) \wedge \gamma_0\).  Their
 method is not exactly obvious, for example writing \(\BE = (1/2)(\BE + \BE)\) to start.  Let us just do this backwards
 instead, expanding \(\BE \cdot v\) to see the form of that term:
-
+%
 \begin{equation}\label{eqn:gafpLorentz:60}
 \begin{aligned}
 \BE \cdot v
@@ -65,15 +65,15 @@ instead, expanding \(\BE \cdot v\) to see the form of that term:
 &= v^0 \sum E^i \gamma_i - \sum E^i v^i \gamma_0.
 \end{aligned}
 \end{equation}
-
+%
 Wedging with \(\gamma_0\) we have the desired result:
-
+%
 \begin{equation*}
 (\BE \cdot v) \wedge \gamma_0 = v^0 \sum E^i \gamma_{i0} = (v \cdot \gamma_0) \BE = c \gamma \BE
 \end{equation*}
-
+%
 Now, for equation 5.164 there are not any surprising steps, but lets try this backwards too:
-
+%
 \begin{equation}\label{eqn:gafpLorentz:80}
 \begin{aligned}
 (I \BB) \cdot v
@@ -81,9 +81,9 @@ Now, for equation 5.164 there are not any surprising steps, but lets try this ba
 &= \sum B^i v^{\mu} \gpgradeone{\gamma_{123i\mu}}
 \end{aligned}
 \end{equation}
-
+%
 That vector selection does yield the cross product as expected:
-
+%
 \begin{equation*}
 \gpgradeone{\gamma_{123i\mu}} =
 \left\{
@@ -95,9 +95,9 @@ That vector selection does yield the cross product as expected:
 \gamma_3 & \quad i\mu = 21 \\
 \end{array} \right.
 \end{equation*}
-
+%
 (with alternation for the missing set of index pairs).
-
+%
 This gives:
 \begin{equation}\label{eqn:gafpLorentz:100}
 \begin{aligned}
@@ -107,17 +107,17 @@ This gives:
 + (B^2 v^1 - B^1 v^2) \gamma_3,
 \end{aligned}
 \end{equation}
-
+%
 thus, since \(v^i = \gamma d{x^i}/dt\), this yields the desired result
-
+%
 \begin{equation*}
 ((I\BB) \cdot v) \wedge \gamma_0 = \gamma \Bv \cross \BB
 \end{equation*}
-
+%
 In retrospect, for this magnetic field term, the GAFP approach is cleaner and easier than to try to do it the dumb way.
 
 Combining the results we have:
-
+%
 \begin{equation}\label{eqn:gafpLorentz:120}
 \begin{aligned}
 \dot{p} \wedge \gamma_0
@@ -125,30 +125,30 @@ Combining the results we have:
 &= q (( \BE + c I \BB ) \cdot (v/c)) \wedge \gamma_0 \\
 \end{aligned}
 \end{equation}
-
+%
 Or with \(F = \BE + c I \BB\), we have:
-
+%
 \begin{equation}\label{eqn:gafpLor:pvec}
 \dot{p} \wedge \gamma_0 = q ( F \cdot v/c ) \wedge \gamma_0
 \end{equation}
-
+%
 It is tempting here to attempt to cancel the \(\wedge \gamma_0\) parts of this equation, but that cannot be done
 until one also shows:
-
+%
 \begin{equation*}
 \dot{p} \cdot \gamma_0 = q ( F \cdot v/c ) \cdot \gamma_0
 \end{equation*}
-
+%
 I follow most of the details of GAFP on this fine.  I found they omitted a couple steps that would have been helpful.
 
 For the four momentum we have:
-
+%
 \begin{equation*}
 p_0 = p \cdot \gamma_0 = E/c
 \end{equation*}
-
+%
 The rate of change work done on the particle by the force is:
-
+%
 \begin{equation}\label{eqn:gafpLorentz:140}
 \begin{aligned}
 dW &= q\BE \cdot d\Bx \\
@@ -165,17 +165,17 @@ dW &= q\BE \cdot d\Bx \\
                    &= q \left(\BE + c I \BB\right) \cdot \left(v/c \wedge \gamma_0\right) \\
 \end{aligned}
 \end{equation}
-
+%
 \(I\BB\) has only purely spatial bivectors, \(\gamma_{12}\), \(\gamma_{13}\), and \(\gamma_{23}\).  On the other hand \(v \wedge \gamma_0 = \sum v^i \gamma_{i0}\) has only spacetime bivectors, so \(I\BB \cdot (v/c \wedge \gamma_0) = 0\), which is why it can be added above to complete the field.
 
 That leaves:
-
+%
 \begin{equation}\label{eqn:gafpLor:p0wedgedotwedge}
 \frac{dp_0}{d\tau} = q F \cdot \left(v/c \wedge \gamma_0\right),
 \end{equation}
-
+%
 but we want to put this in the same form as \eqnref{eqn:gafpLor:pvec}.  To do so, note how we can reduce the dot product of two bivectors:
-
+%
 \begin{equation}\label{eqn:gafpLorentz:160}
 \begin{aligned}
 ( a \wedge b ) \cdot ( c \wedge d )
@@ -185,34 +185,34 @@ but we want to put this in the same form as \eqnref{eqn:gafpLor:pvec}.  To do so
 &= (( a \wedge b ) \cdot c) \cdot d .
 \end{aligned}
 \end{equation}
-
+%
 Using this, and adding the result to \eqnref{eqn:gafpLor:pvec} we have:
-
+%
 \begin{equation*}
 \dot{p} \cdot \gamma_0 + \dot{p} \wedge \gamma_0 = q (F \cdot v/c) \cdot \gamma_0 + q ( F \cdot v/c ) \wedge \gamma_0
 \end{equation*}
-
+%
 Or
 \begin{equation*}
 \dot{p} \gamma_0 = q (F \cdot v/c) \gamma_0
 \end{equation*}
-
+%
 Right multiplying by \(\gamma_0\) on both sides to cancel those terms we have our end result, the covariant form of the Lorentz proper force equation:
-
+%
 \begin{equation}\label{eqn:gafpLor:LorentzCovariant}
 \dot{p} = q ( F \cdot v/c )
 \end{equation}
-
+%
 \section{Lorentz force in terms of four potential}
 
 If one expresses the Faraday bivector in terms of a spacetime curl of a potential vector:
-
+%
 \begin{equation}
 F = \grad \wedge A,
 \end{equation}
-
+%
 then inserting into \eqnref{eqn:gafpLor:LorentzCovariant} we have:
-
+%
 \begin{equation}\label{eqn:gafpLorentz:180}
 \begin{aligned}
 \dot{p}
@@ -221,9 +221,9 @@ then inserting into \eqnref{eqn:gafpLor:LorentzCovariant} we have:
 &= q \left( \grad (A \cdot v/c) - A (\grad \cdot v/c) \right)
 \end{aligned}
 \end{equation}
-
+%
 Let us look at that proper velocity divergence term:
-
+%
 \begin{equation}\label{eqn:gafpLorentz:200}
 \begin{aligned}
 \grad \cdot v/c
@@ -234,31 +234,31 @@ Let us look at that proper velocity divergence term:
 &= 0
 \end{aligned}
 \end{equation}
-
+%
 This leaves the proper Lorentz force expressible as the (spacetime) gradient of a scalar quantity:
-
+%
 \begin{equation}
 \dot{p} = q \grad (A \cdot v/c)
 \end{equation}
-
+%
 I believe this dot product is likely an invariant of electromagnetism.  Looking from the rest frame one has:
-
+%
 \begin{equation}
 \dot{p} = q \grad A^0 = q \sum \gamma^{\mu} \partial_{\mu} A^0 = \sum E^i \gamma_i
 \end{equation}
-
+%
 Wedging with \(\gamma_0\) to calculate \(\BE = \sum E^i \gamma_i\), we have:
-
+%
 \begin{equation*}
 q \sum -\gamma_{i0} \partial_{i} A^0 = - q \spacegrad A^0
 \end{equation*}
-
+%
 So we want to identify this component of the four vector potential with electrostatic potential:
-
+%
 \begin{equation}
 A^0 = \phi
 \end{equation}
-
+%
 \section{Explicit expansion of potential spacetime curl in components}
 
 Having used the gauge condition \(\grad \cdot A = 0\), to express the Faraday bivector as a gradient, we should be able to
@@ -267,7 +267,7 @@ verify that this produces the familiar equations for \(\BE\), and \(\BB\) in ter
 First lets do the electric field components, which are easier.
 
 With \(F = E + icB = \grad \wedge A\), we calculate \(\BE = \sum \sigma_i E^i = \sum \gamma_{i0} E^i\).
-
+%
 \begin{equation}\label{eqn:gafpLorentz:220}
 \begin{aligned}
 E^i
@@ -281,15 +281,15 @@ E^i
 &= - \left( \inv{c} \frac{\partial \BA}{\partial t} + \spacegrad A^{0} \right) \\
 \end{aligned}
 \end{equation}
-
+%
 Again we see that we should identify \(A^0 = \phi\), and write:
-
+%
 \begin{equation}
 \BE + \inv{c} \frac{\partial \BA}{\partial t} = -\spacegrad \phi
 \end{equation}
-
+%
 Now, let us calculate the magnetic field components (setting \(c=1\) temporarily):
-
+%
 \begin{equation}\label{eqn:gafpLorentz:240}
 \begin{aligned}
 i \BB
@@ -301,7 +301,7 @@ i \BB
 &= \gamma_{32} B^1 + \gamma_{13} B^2 + \gamma_{21} B^3 \\
 \end{aligned}
 \end{equation}
-
+%
 Thus, we can calculate the magnetic field components with:
 \begin{equation}\label{eqn:gafpLorentz:260}
 \begin{aligned}
@@ -310,9 +310,9 @@ B^2 &= F \cdot \gamma^{31} \\
 B^3 &= F \cdot \gamma^{12}
 \end{aligned}
 \end{equation}
-
+%
 Here the components of \(F\) of interest are: \(\gamma^i \wedge \gamma_j \partial_i A^j = -\gamma_{ij} \partial_i A^j\).
-
+%
 \begin{equation}\label{eqn:gafpLorentz:280}
 \begin{aligned}
 B^1 &= - \partial_2 A^3 \gamma_{23} \cdot \gamma^{23} - \partial_3 A^2 \gamma_{32} \cdot \gamma^{23} \\
@@ -324,9 +324,9 @@ B^2 &= \partial_3 A^1 - \partial_1 A^3 \\
 B^3 &= \partial_1 A^2 - \partial_2 A^1 \\
 \end{aligned}
 \end{equation}
-
+%
 Or, with \(\BA = \sum \sigma_i A^i\) and \(\spacegrad = \sum \sigma_i \partial_i\), this is our familiar:
-
+%
 \begin{equation}
 \BB = \spacegrad \cross \BA
 \end{equation}

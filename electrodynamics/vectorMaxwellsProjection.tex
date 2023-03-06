@@ -25,22 +25,22 @@ with specific product operations.
 It is helpful in the following to write \(\grad F\) in index notation
 % See: em_bivector_metric_dependencies.pdf
 %\eqnref{eqn:vecMaxProj:Fcomp}
-
+%
 \begin{equation}
 \grad F = \PD{x^\mu}{E^i} {\gamma^{\mu}}_{i 0} - \epsilon_{i j k} c \PD{x^\mu}{B^i} {\gamma^{\mu}}_{j k}
 \end{equation}
-
+%
 In particular, look at the span of the vector, or trivector multiplicands of
 the partials of the electric and magnetic field coordinates
-
+%
 \begin{equation}\label{eqn:vecMaxProj:spanpartialE}
 {\gamma^{\mu}}_{i 0} \in \Span \{ \gamma_{\mu}, \gamma_{0 i j} \}
 \end{equation}
-
+%
 \begin{equation}\label{eqn:vecMaxProj:spanpartialB}
 {\gamma^{\mu}}_{j k} \in \Span \{ \gamma_{i j \mu}, \gamma_i \}
 \end{equation}
-
+%
 \subsection{Gauss's law for electrostatics}
 \index{Gauss's law}
 \index{electrostatics}
@@ -50,18 +50,18 @@ parts of the product with \(\gamma^0\).
 
 Dotting with \(\gamma^0\) will pick off the \(\rho\) term from
 \(J\)
-
+%
 \begin{equation*}
 \frac{J}{\epsilon_0 c} \cdot \gamma^0 = \rho/\epsilon_0,
 \end{equation*}
-
+%
 We see that dotting
 with \(\gamma_0\) will leave bivector parts contributed by the trivectors in
 the span of \eqnref{eqn:vecMaxProj:spanpartialE}.  Similarly the magnetic partials
 will contribute bivectors and scalars with this product.  Therefore to
 get an equation with strictly scalar parts equal to \(\rho/\epsilon_0\) we need
 to compute
-
+%
 \begin{equation}\label{eqn:vectorMaxwellsProjection:20}
 \begin{aligned}
 \gpgradezero{\left(\grad F - J/\epsilon_0 c\right) \gamma^0}
@@ -72,12 +72,12 @@ to compute
 &= \partial_{k} E^k - \rho/\epsilon_0 \\
 \end{aligned}
 \end{equation}
-
+%
 This is Gauss's law for electrostatics:
 \begin{equation}\label{eqn:vecMaxProj:gausselectro}
 \gpgradezero{\left(\grad F - J/\epsilon_0 c\right) \gamma^0} = \spacegrad \cdot \BE - \rho/\epsilon_0 = 0
 \end{equation}
-
+%
 \subsection{Gauss's law for magnetostatics}
 \index{Gauss's law}
 \index{magnetostatics}
@@ -87,7 +87,7 @@ Here we are interested in just the trivector terms that are equal to zero that w
 The divergence like equation of these four can be obtained by dotting with \(\gamma_{123} = \gamma^0 I\).  From the span enumerated
 in \eqnref{eqn:vecMaxProj:spanpartialB}, we see that only the \(\BB\) field contributes such a trivector.  An addition scalar part selection is used
 to eliminate the bivector that \(J\) contributes.
-
+%
 \begin{equation}\label{eqn:vectorMaxwellsProjection:40}
 \begin{aligned}
 \gpgradezero{\left(\grad F - J/\epsilon_0 c\right) \cdot \left(\gamma^0 I\right)}
@@ -102,34 +102,34 @@ to eliminate the bivector that \(J\) contributes.
 &= 0
 \end{aligned}
 \end{equation}
-
+%
 This is just the divergence, and therefore yields Gauss's law for magnetostatics:
-
+%
 \begin{equation}\label{eqn:vecMaxProj:gaussmagnet}
 \left(\grad F - J/\epsilon_0 c\right) \cdot \left(\gamma^0 I / c \right) = \spacegrad \cdot \BB = 0
 \end{equation}
-
+%
 \subsection{Faraday's Law}
 \index{Faraday's law}
 
 We have three more trivector equal zero terms to extract from our field equation.
 
 Taking dot products for those remaining three trivectors we have
-
+%
 \begin{equation}\label{eqn:vectorMaxwellsProjection:60}
 \begin{aligned}
 ( \grad F - J/\epsilon_0 c ) \cdot (\gamma^j I)
 \end{aligned}
 \end{equation}
-
+%
 This will leave a contribution from \(J\), so to exclude that we want to calculate
-
+%
 \begin{equation}\label{eqn:vectorMaxwellsProjection:80}
 \begin{aligned}
 \gpgradezero{( \grad F - J/\epsilon_0 c ) \cdot (\gamma^j I)}
 \end{aligned}
 \end{equation}
-
+%
 The electric field contribution gives us
 \begin{equation}\label{eqn:vectorMaxwellsProjection:100}
 \begin{aligned}
@@ -138,7 +138,7 @@ The electric field contribution gives us
 -\partial_{\mu} E^k (\gamma_0)^2 \gpgradezero{ \gamma^{\mu} \gamma_{k} {\gamma^j}_{123} }
 \end{aligned}
 \end{equation}
-
+%
 the terms \(\mu = 0\) will not produce a scalar, so this leaves
 \begin{equation}\label{eqn:vectorMaxwellsProjection:120}
 \begin{aligned}
@@ -148,7 +148,7 @@ the terms \(\mu = 0\) will not produce a scalar, so this leaves
 &= -\partial_{i} E^k \epsilon_{jik} \\
 \end{aligned}
 \end{equation}
-
+%
 Now, for the magnetic field contribution we have
 \begin{equation}\label{eqn:vectorMaxwellsProjection:140}
 \begin{aligned}
@@ -158,7 +158,7 @@ c \partial_{\mu} B^k \gpgradezero{ \gamma^{\mu} I \gamma_{k0} {\gamma^j} I }
 &= c \partial_{\mu} B^k \gpgradezero{ \gamma^{\mu} \gamma_{k0} {\gamma^j} } \\
 \end{aligned}
 \end{equation}
-
+%
 For a scalar part we need \(\mu = 0\) leaving
 \begin{equation}\label{eqn:vectorMaxwellsProjection:160}
 \begin{aligned}
@@ -168,7 +168,7 @@ c \partial_{0} B^k \gpgradezero{ \gamma^{0} \gamma_{k0} {\gamma^j} }
 &= -\partial_{t} B^j
 \end{aligned}
 \end{equation}
-
+%
 Combining the results and summing as a vector we have:
 \begin{equation}\label{eqn:vectorMaxwellsProjection:180}
 \begin{aligned}
@@ -179,18 +179,18 @@ Combining the results and summing as a vector we have:
 &= 0
 \end{aligned}
 \end{equation}
-
+%
 Moving one term to the opposite side of the equation yields the familiar vector form for Faraday's law
-
+%
 \begin{equation}
 \spacegrad \cross \BE = -\PD{t}{\BB}
 \end{equation}
-
+%
 \subsection{Ampere Maxwell law}
 \index{Ampere Maxwell law}
 
 For the last law, we want the current density, so to extract the Ampere Maxwell law we must have to wedge with \(\gamma^0\).  Such a wedge will eliminate all the trivectors from the span of \eqnref{eqn:vecMaxProj:spanpartialE}, but can contribute pseudoscalar components from the trivectors in \eqnref{eqn:vecMaxProj:spanpartialB}.  Therefore the desired calculation is
-
+%
 \begin{equation}\label{eqn:vectorMaxwellsProjection:200}
 \begin{aligned}
 \gpgradetwo{\left(\grad F - J/\epsilon_0 c\right) \wedge \gamma^0}
@@ -200,9 +200,9 @@ For the last law, we want the current density, so to extract the Ampere Maxwell 
 &= - \frac{(\gamma_0)^2}{c} \PD{t}{\BE} + c \gpgradeone{ \grad I B} \wedge \gamma^0 - (\gamma_0)^2 \BJ/\epsilon_0 c \\
 \end{aligned}
 \end{equation}
-
+%
 Let us take just that middle term
-
+%
 \begin{equation}\label{eqn:vectorMaxwellsProjection:220}
 \begin{aligned}
 \gpgradeone{ \grad I B } \wedge \gamma^0
@@ -211,7 +211,7 @@ Let us take just that middle term
 &= \partial_{\mu} B^k \left(\gpgradetwo{ \gamma_{0123} \gamma^{\mu} \gamma_{0} } \cdot \gamma_k\right) \wedge \gamma^0
 \end{aligned}
 \end{equation}
-
+%
 Here \(\mu \ne 0\) since that leaves just a pseudoscalar in the grade two selection.
 \begin{equation}\label{eqn:vectorMaxwellsProjection:240}
 \begin{aligned}
@@ -224,10 +224,10 @@ Here \(\mu \ne 0\) since that leaves just a pseudoscalar in the grade two select
 &= (\gamma_0)^2 \spacegrad \cross \BB
 \end{aligned}
 \end{equation}
-
+%
 %\partial_{j} B^k \epsilon^{hkj} \sigma_h = - \spacegrad \cross \BB
 Putting things back together and factoring out the common metric dependent \((\gamma_0)^2\) term we have
-
+%
 \begin{equation}\label{eqn:vectorMaxwellsProjection:260}
 \begin{aligned}
 - \inv{c} \PD{t}{\BE} + c \spacegrad \cross \BB - \BJ/\epsilon_0 c &= 0 \\
@@ -235,22 +235,22 @@ Putting things back together and factoring out the common metric dependent \((\g
 - \inv{c^2} \PD{t}{\BE} + \spacegrad \cross \BB - \BJ/\epsilon_0 c^2 &= 0
 \end{aligned}
 \end{equation}
-
+%
 With \(\inv{c^2} = \mu_0 \epsilon_0\) this is the Ampere Maxwell law
-
+%
 \begin{equation}
 \spacegrad \cross \BB = \mu_0 \left(\BJ + \epsilon_0 \PD{t}{\BE} \right)
 \end{equation}
-
+%
 which we can put in the projection form of \eqnref{eqn:vecMaxProj:gausselectro} and \eqnref{eqn:vecMaxProj:gaussmagnet} as:
-
+%
 \begin{equation}\label{eqn:vecMaxProj:amperemaxwell}
 \gpgradetwo{\left(\grad F - J/\epsilon_0 c\right) \wedge (\gamma_0/c)} =
 \spacegrad \cross \BB - \mu_0 \left(\BJ + \epsilon_0 \PD{t}{\BE} \right) = 0
 \end{equation}
-
+%
 \section{Summary of traditional Maxwell's equations as projective operations on Maxwell Equation}
-
+%
 \begin{equation}\label{eqn:vectorMaxwellsProjection:280}
 \begin{aligned}
 \gpgradezero{\left(\grad F - J/\epsilon_0 c\right) \gamma^0} &= \spacegrad \cdot \BE - \rho/\epsilon_0 = 0 \\
@@ -259,5 +259,5 @@ which we can put in the projection form of \eqnref{eqn:vecMaxProj:gausselectro} 
 \gpgradetwo{\left(\grad F - J/\epsilon_0 c\right) \wedge (\gamma_0/c)} &= \spacegrad \cross \BB - \mu_0 \left(\BJ + \epsilon_0 \PD{t}{\BE} \right) = 0
 \end{aligned}
 \end{equation}
-
+%
 Faraday's law requiring a sum suggests that this can likely be written instead using a rejective operation.  Will leave that as a possible future followup.

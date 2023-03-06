@@ -24,7 +24,7 @@ Lorentz transform relationships had not been determined.  The aim here is to try
 \section{Calculation}
 
 Repeating again from \chapcite{PJpoynting}, the electrodynamic energy density \(U\) and momentum flux density vectors are related as follows
-
+%
 \begin{equation}\label{eqn:poynting_rate:fromPoyntingNotes}
 \begin{aligned}
 U &= \frac{\epsilon_0}{2}\left( \BE^2 + c^2 \BB^2 \right) \\
@@ -32,9 +32,9 @@ U &= \frac{\epsilon_0}{2}\left( \BE^2 + c^2 \BB^2 \right) \\
 0 &= \PD{t}{U} + \spacegrad \cdot \BP + \BE \cdot \Bj
 \end{aligned}
 \end{equation}
-
+%
 We want to now calculate the time rate of change of this Poynting (field momentum density) vector.
-
+%
 \begin{equation}\label{eqn:poyntingRate:20}
 \begin{aligned}
 \PD{t}{\BP}
@@ -44,21 +44,21 @@ We want to now calculate the time rate of change of this Poynting (field momentu
 &= \inv{\mu_0} \left( \partial_0 (i c\BB) \cdot \BE  + (i c\BB) \cdot \partial_0 \BE  \right)
 \end{aligned}
 \end{equation}
-
+%
 %Let us ignore the \(\mu_0\) factor for now, and focus just on the field dot products.
 We will want to express these time derivatives in
 terms of the current and spatial derivatives to determine the conservation identity.  To do this let us go back to Maxwell's equation
 once more, with a premultiplication by \(\gamma_0\) to provide us with an observer dependent spacetime split
-
+%
 \begin{equation}\label{eqn:poyntingRate:40}
 \begin{aligned}
 \gamma_0 \grad F &= \gamma_0 J / \epsilon_0 c \\
 (\partial_0 + \spacegrad) ( \BE + i c \BB ) &= \rho/\epsilon_0 - \Bj/\epsilon_0 c \\
 \end{aligned}
 \end{equation}
-
+%
 We want the grade one and grade two components for the time derivative terms.  For grade one we have
-
+%
 \begin{equation}\label{eqn:poyntingRate:60}
 \begin{aligned}
 - \Bj/\epsilon_0 c
@@ -66,7 +66,7 @@ We want the grade one and grade two components for the time derivative terms.  F
 &= \partial_0 \BE + \spacegrad \cdot (ic \BB)
 \end{aligned}
 \end{equation}
-
+%
 and for grade two
 \begin{equation}\label{eqn:poyntingRate:80}
 \begin{aligned}
@@ -75,7 +75,7 @@ and for grade two
 &= \partial_0 (i c \BB) + \spacegrad \wedge \BE
 \end{aligned}
 \end{equation}
-
+%
 Using these we can express the time derivatives for back substitution
 \begin{equation}\label{eqn:poyntingRate:100}
 \begin{aligned}
@@ -83,7 +83,7 @@ Using these we can express the time derivatives for back substitution
 \partial_0 (i c \BB) &= -\spacegrad \wedge \BE
 \end{aligned}
 \end{equation}
-
+%
 yielding
 \begin{equation}\label{eqn:poyntingRate:120}
 \begin{aligned}
@@ -92,7 +92,7 @@ yielding
 &= -(\spacegrad \wedge \BE) \cdot \BE  - (i c\BB) \cdot \left( \Bj/\epsilon_0 c + \spacegrad \cdot (ic \BB) \right) \\
 \end{aligned}
 \end{equation}
-
+%
 Or
 \begin{equation}\label{eqn:poyntingRate:140}
 \begin{aligned}
@@ -104,22 +104,22 @@ Or
 0 &= i\partial_0 (c \BB \wedge \BE) + (\spacegrad \wedge \BE) \cdot \BE + (\spacegrad \wedge (c \BB)) \cdot (c \BB) + i( c\BB \wedge \Bj)/\epsilon_0 c
 \end{aligned}
 \end{equation}
-
+%
 This appears to be the conservation law that is expected for the change in vector field momentum density.
-
+%
 \begin{equation}\label{eqn:poynting_rate:momCons}
 \begin{aligned}
 \partial_t (\BE \cross \BB) + (\spacegrad \wedge \BE) \cdot \BE + c^2 (\spacegrad \wedge \BB) \cdot \BB = (\BB \cross \Bj)/\epsilon_0
 \end{aligned}
 \end{equation}
-
+%
 In terms of the original Poynting vector this is
 \begin{equation}\label{eqn:poynting_rate:withPoynting}
 \begin{aligned}
 \PD{t}{\BP} + \inv{\mu_0}(\spacegrad \wedge \BE) \cdot \BE + c^2 \inv{\mu_0}(\spacegrad \wedge \BB) \cdot \BB = c^2 (\BB \cross \Bj)
 \end{aligned}
 \end{equation}
-
+%
 %For clarity let us temporarily switch to natural units \(c = \epsilon_0 = \mu_0\)
 %
 %\begin{align}
@@ -143,7 +143,7 @@ If \(\BP = P^m \sigma_m\), then each of the \(P^m\) coordinates could be thought
 divergence out of \eqnref{eqn:poynting_rate:momCons}?
 
 Let us expand the wedge-dot term in coordinates.
-
+%
 \begin{equation}\label{eqn:poyntingRate:160}
 \begin{aligned}
 ( (\spacegrad \wedge \BE ) \cdot \BE ) \cdot \sigma_m
@@ -153,16 +153,16 @@ Let us expand the wedge-dot term in coordinates.
 &= \partial_m \frac{\BE^2}{2} - (\BE \cdot \spacegrad) E^m \\
 \end{aligned}
 \end{equation}
-
+%
 So we have three equations, one for each \(m = \{1,2,3\}\)
-
+%
 \begin{equation}\label{eqn:poynting_rate:coordinates}
 \begin{aligned}
 %0 &= \partial_0 (c \BB \wedge \BE) + (\spacegrad \wedge \BE) \cdot \BE + (\spacegrad \wedge (c \BB)) \cdot (c \BB) + c\BB \wedge \Bj/\epsilon_0 c
 \PD{t}{P^m} + c^2 \PD{x^m}{U} - \inv{\mu_0}( (\BE \cdot \spacegrad) E^m + c^2 (\BB \cdot \spacegrad) B^m ) &= c^2 (\BB \cross \Bj)_m
 \end{aligned}
 \end{equation}
-
+%
 Damn.  This does not look anything like the four vector divergence that we had with the Poynting conservation equation.  In the second last line
 of the wedge dot expansion we do see that we only have to sum over the \(k \ne m\) terms.  Can that help simplify this?
 
@@ -174,7 +174,7 @@ To compare \eqnref{eqn:poynting_rate:withPoynting} with the
 products.
 
 This can be done in a couple different ways.  One, is conversion to cross products
-
+%
 \begin{equation}\label{eqn:poyntingRate:180}
 \begin{aligned}
 (\spacegrad \wedge \Ba) \cdot \Ba
@@ -185,14 +185,14 @@ This can be done in a couple different ways.  One, is conversion to cross produc
 &= i^2 ((\spacegrad \cross \Ba) \cross \Ba) \\
 \end{aligned}
 \end{equation}
-
+%
 So we have
 \begin{equation}\label{eqn:poyntingRate:200}
 \begin{aligned}
 (\spacegrad \wedge \Ba) \cdot \Ba &= \Ba \cross (\spacegrad \cross \Ba)
 \end{aligned}
 \end{equation}
-
+%
 so we can rewrite the Poynting time change \eqnref{eqn:poynting_rate:withPoynting} as
 \begin{equation}\label{eqn:poyntingRate:220}
 \begin{aligned}
@@ -201,12 +201,12 @@ so we can rewrite the Poynting time change \eqnref{eqn:poynting_rate:withPoyntin
  = c^2 (\BB \cross \Bj)
 \end{aligned}
 \end{equation}
-
+%
 However, the wikipedia article has \(\rho \BE\) terms, which suggests that a \(\spacegrad \cdot \BE\) based expansion has been used.  Take II.
 
 Let us try expanding this wedge dot differently, and to track what is being operated on write \(\Bx\) as a variable vector, and
 \(\Ba\) as a constant vector.  Now expand
-
+%
 \begin{equation}\label{eqn:poyntingRate:240}
 \begin{aligned}
 (\spacegrad \wedge \Bx) \cdot \Ba
@@ -220,7 +220,7 @@ Let us try expanding this wedge dot differently, and to track what is being oper
 %&= \Ba (\spacegrad \cdot \Bx) - (\Ba \cdot \spacegrad) \Bx - \Ba (\spacegrad \cdot \Bx) + \spacegrad (\Ba \cdot \Bx) \\
 \end{aligned}
 \end{equation}
-
+%
 %Now it looks like we are going in circles a bit here, and there is probably a more direct way.  We do however have as a final
 %result
 %
@@ -229,7 +229,7 @@ Let us try expanding this wedge dot differently, and to track what is being oper
 %\end{align*}
 
 What we really want is an expansion of \((\spacegrad \wedge \Bx) \cdot \Bx\).  To get there consider
-
+%
 \begin{equation}\label{eqn:poyntingRate:260}
 \begin{aligned}
 \spacegrad \Bx^2
@@ -237,15 +237,15 @@ What we really want is an expansion of \((\spacegrad \wedge \Bx) \cdot \Bx\).  T
 &= 2 \dot{\spacegrad} {\Bx} \cdot \dot{\Bx} \\
 \end{aligned}
 \end{equation}
-
+%
 This has the same form as the first term above.  We take the gradient and apply it to a dot product where one of the vectors is kept constant, so we can write
-
+%
 \begin{equation}\label{eqn:poyntingRate:280}
 \begin{aligned}
 {\spacegrad} {\Bx} \cdot \dot{\Bx} &= \inv{2} \spacegrad \Bx^2
 \end{aligned}
 \end{equation}
-
+%
 and finally
 \begin{equation}\label{eqn:poynting_rate:wedgedot}
 \begin{aligned}
@@ -254,9 +254,9 @@ and finally
 &= \inv{2} \spacegrad \Bx^2 - (\Bx \cdot \spacegrad) \Bx
 \end{aligned}
 \end{equation}
-
+%
 We can now reassemble the equations and write
-
+%
 \begin{equation}\label{eqn:poyntingRate:300}
 \begin{aligned}
 (\spacegrad \wedge \BE) \cdot \BE + c^2 (\spacegrad \wedge \BB) \cdot \BB
@@ -266,18 +266,18 @@ We can now reassemble the equations and write
 &= \inv{\epsilon_0} \spacegrad U - (\BE \cdot \spacegrad) \BE - c^2 (\BB \cdot \spacegrad) \BB \\
 \end{aligned}
 \end{equation}
-
+%
 Now, we have the time derivative of momentum and the spatial derivative of the energy grouped together in a nice
 relativistic seeming pairing.  For comparison let us also put the energy density rate change equation with this
 to observe them together
-
+%
 \begin{equation}\label{eqn:poynting_rate:withPoyntingAndEnergy}
 \begin{aligned}
 \PD{t}{U} + \spacegrad \cdot \BP &= -\Bj \cdot \BE \\
 \PD{t}{\BP} + c^2 \spacegrad U &= -c^2 (\Bj \cross \BB) + \inv{\mu_0} \left( (\BE \cdot \spacegrad) \BE + c^2 (\BB \cdot \spacegrad) \BB \right)
 \end{aligned}
 \end{equation}
-
+%
 The second equation here is exactly what we worked out above by coordinate expansion when looking for a four vector formulation
 of this equation.  This however, appears much closer to the desired result, which was not actually clear looking at the
 coordinate expansion.
@@ -285,14 +285,14 @@ coordinate expansion.
 These equations are not tidy enough seeming, so one can intuit that there is some more natural way to express those
 misfit seeming \((\Bx \cdot \spacegrad) \Bx\) terms.
 It would be logically tidier if we could express those both in terms of charge and current densities.
-
+%
 Now, it is too bad that it is not true that
 \begin{equation}\label{eqn:poyntingRate:320}
 \begin{aligned}
 (\BE \cdot \spacegrad) \BE &= \BE (\spacegrad \cdot \BE)
 \end{aligned}
 \end{equation}
-
+%
 If that were the case then we would have on the right hand side
 \begin{equation}\label{eqn:poyntingRate:340}
 \begin{aligned}
@@ -307,12 +307,12 @@ If that were the case then we would have on the right hand side
 &= -c^2(\Bj \cross \BB) + \inv{\mu_0} \rho \BE \\
 \end{aligned}
 \end{equation}
-
+%
 This has a striking similarity to the Lorentz force law, and is also fairly close to the wikipedia equation, with the exception that the
 \(\Bj \cross \BB\) and \(\rho \BE\) terms have opposing signs.
 
 Lets instead adding and subtracting this term so that the conservation equation remains correct
-
+%
 \begin{equation}\label{eqn:poyntingRate:360}
 \begin{aligned}
 \inv{c^2} \PD{t}{\BP} + \spacegrad U &-\epsilon_0 \left(
@@ -323,15 +323,15 @@ Lets instead adding and subtracting this term so that the conservation equation 
 \end{aligned}
 \end{equation}
 % c^2 \mu_0 = 1/\e_0
-
+%
 Now we are left with quantities of the following form.
-
+%
 \begin{equation}\label{eqn:poyntingRate:380}
 \begin{aligned}
 \Bx (\spacegrad \cdot \Bx) +(\Bx \cdot \spacegrad) \Bx
 \end{aligned}
 \end{equation}
-
+%
 The sum of these for the electric and magnetic fields appears to be what the
 wiki article calls \(\spacegrad \cdot \sigma\), although it appears
 there that \(\sigma\) is a scalar so this does not quite make sense.
@@ -342,13 +342,13 @@ express these in terms of a gradient of the squared fields?  We have such \(\BE^
 could be done.
 
 The essence of the desired reduction is to see if we can find a scalar function \(\sigma(\Bx)\) such that
-
+%
 \begin{equation}\label{eqn:poyntingRate:400}
 \begin{aligned}
 \spacegrad \sigma(\Bx) &= \inv{2} \spacegrad \Bx^2 - \left(\Bx (\spacegrad \cdot \Bx) + (\Bx \cdot \spacegrad) \Bx )\right)
 \end{aligned}
 \end{equation}
-
+%
 \subsection{stress tensor}
 \index{stress tensor}
 
@@ -367,7 +367,7 @@ TODO: ...
 After going in circles and having a better idea now where I am going, time to restart and make sure that errors are not compounding.
 
 The starting point will be
-
+%
 \begin{equation}\label{eqn:poyntingRate:420}
 \begin{aligned}
 \PD{t}{\BP} &= \inv{\mu_0} \left( \partial_0 (i c\BB) \cdot \BE  + (i c\BB) \cdot \partial_0 \BE  \right) \\
@@ -375,23 +375,23 @@ The starting point will be
 \partial_0 (i c \BB) &= -\spacegrad \wedge \BE
 \end{aligned}
 \end{equation}
-
+%
 Assembling we have
-
+%
 \begin{equation}\label{eqn:poyntingRate:440}
 \begin{aligned}
 \PD{t}{\BP} + \inv{\mu_0} \left( (\spacegrad \wedge \BE) \cdot \BE + (i c\BB) \cdot ( \Bj/\epsilon_0 c + \spacegrad \cdot (ic \BB) ) \right) &= 0 \\
 \end{aligned}
 \end{equation}
-
+%
 This is
-
+%
 \begin{equation}\label{eqn:poyntingRate:460}
 \begin{aligned}
 \PD{t}{\BP} + \inv{\mu_0} \left( (\spacegrad \wedge \BE) \cdot \BE + (i c\BB) \cdot ( \spacegrad \cdot (ic \BB) ) \right) &= -c^2 (i \BB) \cdot \Bj.
 \end{aligned}
 \end{equation}
-
+%
 Now get rid of the pseudoscalars
 \begin{equation}\label{eqn:poyntingRate:480}
 \begin{aligned}
@@ -402,7 +402,7 @@ Now get rid of the pseudoscalars
 &= -(\BB \cross \Bj) \\
 \end{aligned}
 \end{equation}
-
+%
 and
 \begin{equation}\label{eqn:poyntingRate:500}
 \begin{aligned}
@@ -414,16 +414,16 @@ and
 &= -c^2 \BB \cdot (\spacegrad \wedge \BB) \\
 \end{aligned}
 \end{equation}
-
+%
 So we have
 \begin{equation}\label{eqn:poyntingRate:520}
 \begin{aligned}
 \PD{t}{\BP} - \inv{\mu_0} \left( \BE \cdot (\spacegrad \wedge \BE) +c^2 \BB \cdot (\spacegrad \wedge \BB) \right) &= c^2 (\BB \cross \Bj) \\
 \end{aligned}
 \end{equation}
-
+%
 Now we subtract \((\BE (\spacegrad \cdot \BE) + c^2 \BB (\spacegrad \cdot \BB))/\mu_0 = \BE \rho/\epsilon_0\mu_0\) from both sides yielding
-
+%
 \begin{equation}\label{eqn:poyntingRate:540}
 \begin{aligned}
 \PD{t}{\BP} - \inv{\mu_0} \left(
@@ -433,9 +433,9 @@ Now we subtract \((\BE (\spacegrad \cdot \BE) + c^2 \BB (\spacegrad \cdot \BB))/
 \right) &= -c^2 (\Bj \cross \BB + \rho \BE) \\
 \end{aligned}
 \end{equation}
-
+%
 Regrouping slightly
-
+%
 \begin{equation}\label{eqn:poyntingRate:560}
 \begin{aligned}
 0 = \inv{c^2}\PD{t}{\BP} &+ (\Bj \cross \BB + \rho \BE)
@@ -447,9 +447,9 @@ Regrouping slightly
 \right)
 \end{aligned}
 \end{equation}
-
+%
 Now, let us write the \(\BE\) gradient terms here explicitly in coordinates.
-
+%
 \begin{equation}\label{eqn:poyntingRate:580}
 \begin{aligned}
 -\BE \cdot (\spacegrad \wedge \BE) - \BE (\spacegrad \cdot \BE)
@@ -466,27 +466,27 @@ Now, let us write the \(\BE\) gradient terms here explicitly in coordinates.
 &= \sum_{k,m} \sigma_k \left( -E^m \partial_m E^k +E^m \partial_k E^m -E^k \partial_m E^m \right) \\
 \end{aligned}
 \end{equation}
-
+%
 We could do the \(\BB\) terms too, but they will have the same form.  Now \citep{schwartz1987pe} contains a relativistic treatment of
 the stress tensor that would take some notation study to digest, but the end result appears to have the divergence
 result that is desired.  It is a second rank tensor which probably explains the \(\grad \cdot \sigma\) notation in wikipedia.
 
 For the \(x\) coordinate of the \(\PDi{t}{\BP}\) vector the book says we have a vector of the form
-
+%
 \begin{equation}\label{eqn:poyntingRate:600}
 \begin{aligned}
 \BT_x = \inv{2}(- E_x^2 + E_y^2 + E_z^2)\sigma_1 - E_x E_y \sigma_2 - E_x E_z \sigma_3
 \end{aligned}
 \end{equation}
-
+%
 and it looks like the divergence of this should give us our desired mess.  Let us try this, writing \(k,m,n\) as distinct indices.
-
+%
 \begin{equation}\label{eqn:poyntingRate:620}
 \begin{aligned}
 \BT_k &= \inv{2}(- (E^k)^2 + (E^m)^2 + (E^n)^2)\sigma_k - E^k E^m \sigma_m - E^k E^n \sigma_n
 \end{aligned}
 \end{equation}
-
+%
 \begin{equation}\label{eqn:poyntingRate:640}
 \begin{aligned}
 \spacegrad \cdot \BT_k
@@ -512,9 +512,9 @@ and it looks like the divergence of this should give us our desired mess.  Let u
 \\
 \end{aligned}
 \end{equation}
-
+%
 Does this match?  Let us expand our \(k\) term above to see if it looks the same.  That is
-
+%
 \begin{equation}\label{eqn:poyntingRate:660}
 \begin{aligned}
 \sum_m (-E^m \partial_m E^k +E^m \partial_k E^m -E^k \partial_m E^m)
@@ -538,15 +538,15 @@ Does this match?  Let us expand our \(k\) term above to see if it looks the same
 +E^n \partial_k E^n \\
 \end{aligned}
 \end{equation}
-
+%
 Yeah!  Finally have a form of the momentum conservation equation that is strictly in terms of gradients and time partials.  Summarizing the results, this is
-
+%
 \begin{equation}\label{eqn:poyntingRate:680}
 \begin{aligned}
 \inv{c^2}\PD{t}{\BP} + \Bj \cross \BB + \rho \BE + \sum_k \sigma_k \spacegrad \cdot \BT_k = 0
 \end{aligned}
 \end{equation}
-
+%
 Where
 \begin{equation}\label{eqn:poyntingRate:700}
 \begin{aligned}
@@ -558,9 +558,9 @@ Where
 + c^2 \BB (\spacegrad \cdot \BB) \right)
 \end{aligned}
 \end{equation}
-
+%
 For \(\BT_k\) itself, with \(k \ne m \ne n\) we have
-
+%
 \begin{equation}\label{eqn:poyntingRate:720}
 \begin{aligned}
 \BT_k &=
