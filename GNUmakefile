@@ -123,9 +123,6 @@ mmacells.sty: mmacells/mmacells.sty
 clean ::
 	git checkout FrontBackmatter/Titlepage.tex
 
-scrpage2.sty : ../latex/scrpage2.sty
-	cp $^ $@
-
 #backmatter.tex: ../latex/classicthesis_mine/backmatter2.tex
 #	rm -f $@
 #	ln -s ../latex/classicthesis_mine/backmatter2.tex backmatter.tex
